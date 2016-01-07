@@ -5,8 +5,13 @@ LOCAL_MODULE_TAGS := optional
 
 LOCAL_SRC_FILES := $(call all-java-files-under, src)
 
-LOCAL_PACKAGE_NAME := CMStats
+LOCAL_PACKAGE_NAME := ResurrectionStats
 LOCAL_CERTIFICATE := platform
+
+LOCAL_STATIC_JAVA_LIBRARIES := \
+	android-support-v4 \
+  org.apache.http.legacy
+
 
 include $(BUILD_PACKAGE)
 

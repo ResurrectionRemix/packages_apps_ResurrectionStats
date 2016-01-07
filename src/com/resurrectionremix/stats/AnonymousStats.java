@@ -1,11 +1,13 @@
 /*
- * Copyright (C) 2012 The CyanogenMod Project
+ * Copyright (C) 2016 ResurrectionRemix
+ *
+ * An unmodified copy of this file can be found at https://github.com/mcbyte-it/rom_stats
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- *      http://www.apache.org/licenses/LICENSE-2.0
+ *	  http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -14,7 +16,7 @@
  * limitations under the License.
  */
 
-package android.romstats;
+package com.resurrectionremix.stats;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -89,13 +91,13 @@ public class AnonymousStats extends PreferenceActivity implements
 		//btnUninstall = prefSet.findPreference(PREF_UNINSTALL);
 
 		boolean firstBoot = mPrefs.getBoolean(Const.ANONYMOUS_FIRST_BOOT, true);
-        if (mEnableReporting.isChecked() && firstBoot) {
-        	Log.d(Const.TAG, "First app start, set params and report immediately");
-            mPrefs.edit().putBoolean(Const.ANONYMOUS_FIRST_BOOT, false).apply();
-            mPrefs.edit().putLong(Const.ANONYMOUS_LAST_CHECKED, 1).apply();
-            ReportingServiceManager.launchService(this);
-        }
-        
+		if (mEnableReporting.isChecked() && firstBoot) {
+			Log.d(Const.TAG, "First app start, set params and report immediately");
+			mPrefs.edit().putBoolean(Const.ANONYMOUS_FIRST_BOOT, false).apply();
+			mPrefs.edit().putLong(Const.ANONYMOUS_LAST_CHECKED, 1).apply();
+			ReportingServiceManager.launchService(this);
+		}
+
 		Preference mPrefAboutVersion = (Preference) prefSet.findPreference(PREF_ABOUT);
 		String versionString = getResources().getString(R.string.app_name);
 		try {
@@ -104,18 +106,18 @@ public class AnonymousStats extends PreferenceActivity implements
 			// nothing
 		}
 		mPrefAboutVersion.setTitle(versionString);
-		
+
 		Preference aboutWesbite = (Preference) prefSet.findPreference(PREF_WEBSITE);
 		aboutWesbite.setOnPreferenceClickListener(new OnPreferenceClickListener() {
 			@Override
 			public boolean onPreferenceClick(Preference preference) {
-    			Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.pref_info_website_url)));
-    			startActivity(intent);
-				
+				Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.pref_info_website_url)));
+				startActivity(intent);
+
 				return false;
 			}
 		});
-		
+
 		Preference mPrefHolder;
 		/* Experimental feature 2 */
 		Long lastCheck = mPrefs.getLong(Const.ANONYMOUS_LAST_CHECKED, 0);
@@ -123,10 +125,10 @@ public class AnonymousStats extends PreferenceActivity implements
 			// show last checkin date
 			String lastCheckStr = DateFormat.getDateTimeInstance(DateFormat.MEDIUM, DateFormat.SHORT).format(new java.util.Date(lastCheck));
 			lastCheckStr = getResources().getString(R.string.last_report_on) + ": " + lastCheckStr;
-			
+
 			mPrefHolder = prefSet.findPreference(PREF_LAST_REPORT_ON);
 			mPrefHolder.setTitle(lastCheckStr);
-			
+
 			Long nextCheck = mPrefs.getLong(Const.ANONYMOUS_NEXT_ALARM, 0);
 			if (nextCheck > 0) {
 				String nextAlarmStr = DateFormat.getDateTimeInstance(DateFormat.MEDIUM, DateFormat.SHORT).format(new java.util.Date(nextCheck));
@@ -138,11 +140,11 @@ public class AnonymousStats extends PreferenceActivity implements
 			PreferenceCategory prefCat = (PreferenceCategory) prefSet.findPreference("pref_stats");
 			prefCat.removePreference(mPrefHolder);
 		}
-			
+
 		mPrefHolder = prefSet.findPreference(PREF_REPORT_INTERVAL);
 		int tFrame = (int) Utilities.getTimeFrame();
 		mPrefHolder.setSummary(getResources().getQuantityString(R.plurals.reporting_interval_days, tFrame, tFrame));
-		
+
 		// show app signature
 		if (true) {
 			String appSignature = "";
@@ -154,7 +156,7 @@ public class AnonymousStats extends PreferenceActivity implements
 				e.printStackTrace();
 			}
 			Signature[] signatures = packageInfo.signatures;
-			
+
 			/*
 			Log.d("TAG", "Internal signature: " + signatures[0].toCharsString());
 
@@ -188,18 +190,18 @@ public class AnonymousStats extends PreferenceActivity implements
 					}
 					hexString.append(appendString);
 				}
-				
+
 				appSignature = hexString.toString();
 			} catch (NoSuchAlgorithmException e1) {
 				e1.printStackTrace();
 			}*/
-			
+
 			if (Const.CERT_PUB_KEY.equals(new String(signatures[0].toChars()))) {
 				appSignature = "Valid";
 			} else {
 				appSignature = "Invalid";
 			}
-			
+
 			mPrefHolder = prefSet.findPreference("pref_app_signature");
 			mPrefHolder.setSummary(appSignature);
 		}
@@ -207,7 +209,7 @@ public class AnonymousStats extends PreferenceActivity implements
 		// Cancel notification on app open, in case it doesn't AutoCancel
 		NotificationManager nm = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
 		nm.cancel(Utilities.NOTIFICATION_ID);
-		
+
 		Utilities.checkIconVisibility(this);
 	}
 
@@ -237,29 +239,29 @@ public class AnonymousStats extends PreferenceActivity implements
 			if (mPersistentOptout.isChecked()) {
 				try {
 					File sdCard = Environment.getExternalStorageDirectory();
-					File dir = new File (sdCard.getAbsolutePath() + "/.ROMStats");
+					File dir = new File (sdCard.getAbsolutePath() + "/.ResurrectionStats");
 					dir.mkdirs();
 					File cookieFile = new File(dir, "optout");
-					
+
 					FileOutputStream optOutCookie = new FileOutputStream(cookieFile);
 					OutputStreamWriter oStream = new OutputStreamWriter(optOutCookie);
-		            oStream.write("true");
-		            oStream.close();
-		            optOutCookie.close();
-		            Log.d(Const.TAG, "Persistent Opt-Out cookie written successfully");
+					oStream.write("true");
+					oStream.close();
+					optOutCookie.close();
+					Log.d(Const.TAG, "Persistent Opt-Out cookie written successfully");
 				} catch (IOException e) {
 					Log.e(Const.TAG, "Unable to write persistent optout cookie", e);
 				}
 			} else {
 				try {
 					File sdCard = Environment.getExternalStorageDirectory();
-					File dir = new File (sdCard.getAbsolutePath() + "/.ROMStats");
+					File dir = new File (sdCard.getAbsolutePath() + "/.ResurrectionStats");
 					File cookieFile = new File(dir, "optout");
 					cookieFile.delete();
 					Log.d(Const.TAG, "Persistent Opt-Out cookie removed successfully");
 				} catch (Exception e) {
 					Log.w(Const.TAG, "Unable to write persistent optout cookie", e);
-				}				
+				}
 			}
 		} else if (preference == mViewStats) {
 			// Display the stats page
@@ -289,18 +291,18 @@ public class AnonymousStats extends PreferenceActivity implements
 		if (which == DialogInterface.BUTTON_POSITIVE) {
 			mOkClicked = true;
 			mPrefs.edit().putBoolean(Const.ANONYMOUS_OPT_IN, true).apply();
-			
+
 			mPersistentOptout.setChecked(false);
 			try {
 				File sdCard = Environment.getExternalStorageDirectory();
-				File dir = new File (sdCard.getAbsolutePath() + "/.ROMStats");
+				File dir = new File (sdCard.getAbsolutePath() + "/.ResurrectionStats");
 				File cookieFile = new File(dir, "optout");
 				cookieFile.delete();
 				Log.d(Const.TAG, "Persistent Opt-Out cookie removed successfully");
 			} catch (Exception e) {
 				Log.w(Const.TAG, "Unable to write persistent optout cookie", e);
 			}
-			
+
 			ReportingServiceManager.launchService(this);
 		} else if (which == DialogInterface.BUTTON_NEGATIVE) {
 			mEnableReporting.setChecked(false);
@@ -315,7 +317,7 @@ public class AnonymousStats extends PreferenceActivity implements
 		MenuInflater inflater = getMenuInflater();
 		inflater.inflate(R.menu.menu, menu);
 
-		// remove Uninstall option if RomStats is installed as System App
+		// remove Uninstall option if ResurrectionStats is installed as System App
 		try {
 			PackageManager pm = getPackageManager();
 			ApplicationInfo appInfo = pm.getApplicationInfo(getPackageName(), 0);
@@ -388,28 +390,28 @@ public class AnonymousStats extends PreferenceActivity implements
 
 		return super.onOptionsItemSelected(item);
 	}
-	
+
 	public void uninstallSelf() {
 		Intent intent = new Intent(Intent.ACTION_DELETE);
 		intent.setData(Uri.parse("package:" + getPackageName()));
 		startActivity(intent);
 	}
-	
+
 	public void hideLauncherIcon() {
 		PackageManager p = getPackageManager();
 		p.setComponentEnabledSetting(getComponentName(), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
 
 		try {
 			File sdCard = Environment.getExternalStorageDirectory();
-			File dir = new File (sdCard.getAbsolutePath() + "/.ROMStats");
+			File dir = new File (sdCard.getAbsolutePath() + "/.ResurrectionStats");
 			dir.mkdirs();
 			File cookieFile = new File(dir, "hide_icon");
-			
+
 			FileOutputStream optOutCookie = new FileOutputStream(cookieFile);
 			OutputStreamWriter oStream = new OutputStreamWriter(optOutCookie);
-	        oStream.write("true");
-	        oStream.close();
-	        optOutCookie.close();
+			oStream.write("true");
+			oStream.close();
+			optOutCookie.close();
 		} catch (IOException e) {
 			Log.e(Const.TAG, "Error while writing 'hide_icon' file to sdcard", e);
 		}

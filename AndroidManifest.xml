@@ -1,52 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="android.romstats"
-    android:versionCode="3"
-    android:versionName="2.0-beta" >
+	package="com.resurrectionremix.stats"
+	android:versionCode="4"
+	android:versionName="0" >
 
 	<uses-sdk
-		android:minSdkVersion="9"
-		android:targetSdkVersion="18" />
+		android:minSdkVersion="22"
+		android:targetSdkVersion="23" />
 
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    
-    <application
-        android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
-        android:label="@string/app_name" >
-        <activity
-            android:name="android.romstats.AnonymousStats"
-            android:label="@string/app_name" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        
-        <activity android:name="android.romstats.PreviewActivity" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	
+	<application
+		android:allowBackup="true"
+		android:icon="@drawable/ic_launcher"
+		android:label="@string/app_name" >
+		<activity
+			android:name="com.resurrectionremix.stats.AnonymousStats"
+			android:label="@string/app_name" >
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		
+		<activity android:name="com.resurrectionremix.stats.PreviewActivity" />
 
-        <receiver
-            android:name="android.romstats.ReportingServiceManager"
-            android:enabled="true"
-            android:exported="false"
-            android:label="ReportingServiceManager" >
-            <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED" />
-                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
-            </intent-filter>
-        </receiver>
+		<receiver
+			android:name="com.resurrectionremix.stats.ReportingServiceManager"
+			android:enabled="true"
+			android:exported="false"
+			android:label="ReportingServiceManager" >
+			<intent-filter>
+				<action android:name="android.intent.action.BOOT_COMPLETED" />
+				<action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+			</intent-filter>
+		</receiver>
 
-        <service
-            android:name="android.romstats.ReportingService"
-            android:enabled="true"
-            android:exported="false"
-            android:label="ReportingService" >
-        </service>
-    </application>
+		<service
+			android:name="com.resurrectionremix.stats.ReportingService"
+			android:enabled="true"
+			android:exported="false"
+			android:label="ReportingService" >
+		</service>
+	</application>
 </manifest>
