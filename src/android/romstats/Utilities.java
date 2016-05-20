@@ -136,22 +136,7 @@ public class Utilities {
 		}
 	}
 
-	public static String getSigningCert(Context context) {
-		PackageInfo packageInfo = null;
-
-		try {
-			packageInfo = context.getPackageManager().getPackageInfo(context.getPackageName(), PackageManager.GET_SIGNATURES);
-		} catch (NameNotFoundException e) {
-			e.printStackTrace();
-		}
-		Signature[] signatures = packageInfo.signatures;
-
-		String signingCertHash = digest(signatures[0].toCharsString());
-
-		return signingCertHash;
-	}
-
-
+	
 	/**
 	 * Gets the Ask First value
 	 * 0: RomStats will behave like CMStats, starts reporting automatically after the tframe (default)

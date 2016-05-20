@@ -146,67 +146,6 @@ public class AnonymousStats extends PreferenceActivity implements
 		int tFrame = (int) Utilities.getTimeFrame();
 		mPrefHolder.setSummary(getResources().getQuantityString(R.plurals.reporting_interval_days, tFrame, tFrame));
 
-		// show app signature
-		if (true) {
-			String appSignature = "";
-			PackageInfo packageInfo = null;
-
-			try {
-				packageInfo = this.getPackageManager().getPackageInfo(this.getPackageName(), PackageManager.GET_SIGNATURES);
-			} catch (NameNotFoundException e) {
-				e.printStackTrace();
-			}
-			Signature[] signatures = packageInfo.signatures;
-
-			/*
-			Log.d("TAG", "Internal signature: " + signatures[0].toCharsString());
-
-			InputStream input = new ByteArrayInputStream(signatures[0].toByteArray());
-
-			CertificateFactory cf = null;
-			try {
-				cf = CertificateFactory.getInstance("X509");
-			} catch (CertificateException e) {
-				e.printStackTrace();
-			}
-			X509Certificate c = null;
-			try {
-				c = (X509Certificate) cf.generateCertificate(input);
-			} catch (CertificateException e) {
-				e.printStackTrace();
-			}
-
-			try {
-				MessageDigest md = MessageDigest.getInstance("SHA1");
-				byte[] publicKey = md.digest(c.getPublicKey().getEncoded());
-
-				StringBuffer hexString = new StringBuffer();
-				for (int i = 0; i < publicKey.length; i++) {
-					String appendString = Integer.toHexString(0xFF & publicKey[i]);
-					if (appendString.length() == 1) {
-						hexString.append("0");
-					}
-					if (hexString.length() > 0) {
-						hexString.append(":");
-					}
-					hexString.append(appendString);
-				}
-
-				appSignature = hexString.toString();
-			} catch (NoSuchAlgorithmException e1) {
-				e1.printStackTrace();
-			}*/
-
-			if (Const.CERT_PUB_KEY.equals(new String(signatures[0].toChars()))) {
-				appSignature = "Valid";
-			} else {
-				appSignature = "Invalid";
-			}
-
-			mPrefHolder = prefSet.findPreference("pref_app_signature");
-			mPrefHolder.setSummary(appSignature);
-		}
-
 		// Cancel notification on app open, in case it doesn't AutoCancel
 		NotificationManager nm = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
 		nm.cancel(Utilities.NOTIFICATION_ID);
