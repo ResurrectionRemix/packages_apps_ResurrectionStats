@@ -101,7 +101,7 @@ public class ReportingService extends Service {
 
             // report to the cmstats service
             HttpClient httpClient = new DefaultHttpClient();
-            HttpPost httpPost = new HttpPost(romStatsUrl + "submit");
+            HttpPost httpPost = new HttpPost(romStatsUrl + "submit.php");
             boolean success = false;
 
             try {

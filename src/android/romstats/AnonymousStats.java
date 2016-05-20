@@ -158,7 +158,7 @@ public class AnonymousStats extends PreferenceActivity implements
 	public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
 		if (preference == mViewStats) {
 			// Display the stats page
-			Uri uri = Uri.parse(Utilities.getStatsUrl() + "stats");
+			Uri uri = Uri.parse(Utilities.getStatsUrl() + "stats.php");
 			startActivity(new Intent(Intent.ACTION_VIEW, uri));
 		} else {
 			// If we didn't handle it, let preferences handle it.
