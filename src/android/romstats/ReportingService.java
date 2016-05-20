@@ -86,7 +86,6 @@ public class ReportingService extends Service {
     		String deviceCarrierId = Utilities.getCarrierId(getApplicationContext());
     		String romName = Utilities.getRomName();
     		String romVersion = Utilities.getRomVersion();
-    		String romStatsSignCert = Utilities.getSigningCert(getApplicationContext());
 
     		String romStatsUrl = Utilities.getStatsUrl();
 
@@ -99,7 +98,6 @@ public class ReportingService extends Service {
     		Log.d(Const.TAG, "SERVICE: Carrier ID=" + deviceCarrierId);
     		Log.d(Const.TAG, "SERVICE: ROM Name=" + romName);
     		Log.d(Const.TAG, "SERVICE: ROM Version=" + romVersion);
-    		Log.d(Const.TAG, "SERVICE: Sign Cert=" + romStatsSignCert);
 
             // report to the cmstats service
             HttpClient httpClient = new DefaultHttpClient();
@@ -116,7 +114,6 @@ public class ReportingService extends Service {
     			kv.add(new BasicNameValuePair("device_carrier_id", deviceCarrierId));
     			kv.add(new BasicNameValuePair("rom_name", romName));
     			kv.add(new BasicNameValuePair("rom_version", romVersion));
-    			kv.add(new BasicNameValuePair("sign_cert", romStatsSignCert));
 
                 httpPost.setEntity(new UrlEncodedFormEntity(kv));
                 httpClient.execute(httpPost);
