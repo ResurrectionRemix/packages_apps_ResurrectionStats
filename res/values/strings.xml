@@ -15,7 +15,7 @@
 -->
 
 <resources>
-    <string name="app_name">ROM Stats</string>
+    <string name="app_name">ResurrectionRemix Stats</string>
 
     <!-- Main -->
     <string name="main_title">Anonymous Usage Data</string>

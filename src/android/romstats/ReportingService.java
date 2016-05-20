@@ -39,13 +39,10 @@ import android.os.IBinder;
 import android.support.v4.app.NotificationCompat;
 import android.util.Log;
 
-import com.google.analytics.tracking.android.GoogleAnalytics;
-import com.google.analytics.tracking.android.Tracker;
-
 public class ReportingService extends Service {
 
 	private StatsUploadTask mTask;
-	
+
 	@Override
 	public IBinder onBind(Intent intent) {
 		return null;
@@ -59,16 +56,16 @@ public class ReportingService extends Service {
             promptUser();
             canReport = false;
         }
-        
+
         String RomStatsUrl = Utilities.getStatsUrl();
         if (RomStatsUrl == null || RomStatsUrl.isEmpty()) {
         	Log.e(Const.TAG, "This ROM is not configured for ROM Statistics.");
         	canReport = false;
         }
-        
+
         if (canReport) {
 	    	Log.d(Const.TAG, "User has opted in -- reporting.");
-	    	
+
 	        if (mTask == null || mTask.getStatus() == AsyncTask.Status.FINISHED) {
 	            mTask = new StatsUploadTask();
 	            mTask.execute();
@@ -77,7 +74,7 @@ public class ReportingService extends Service {
 
         return Service.START_REDELIVER_INTENT;
     }
-    
+
     private class StatsUploadTask extends AsyncTask<Void, Void, Boolean> {
         @Override
         protected Boolean doInBackground(Void... params) {
@@ -92,7 +89,7 @@ public class ReportingService extends Service {
     		String romStatsSignCert = Utilities.getSigningCert(getApplicationContext());
 
     		String romStatsUrl = Utilities.getStatsUrl();
-    		
+
     		Log.d(Const.TAG, "SERVICE: Report URL=" + romStatsUrl);
     		Log.d(Const.TAG, "SERVICE: Device ID=" + deviceId);
     		Log.d(Const.TAG, "SERVICE: Device Name=" + deviceName);
@@ -104,16 +101,6 @@ public class ReportingService extends Service {
     		Log.d(Const.TAG, "SERVICE: ROM Version=" + romVersion);
     		Log.d(Const.TAG, "SERVICE: Sign Cert=" + romStatsSignCert);
 
-			if (Utilities.getGaTracking() != null) {
-				Log.d(Const.TAG, "Reporting to Google Analytics is enabled");
-				
-				GoogleAnalytics ga = GoogleAnalytics.getInstance(ReportingService.this);
-				Tracker tracker = ga.getTracker(Utilities.getGaTracking());
-				tracker.sendEvent(deviceName, deviceVersion, deviceCountry, null);
-				tracker.sendEvent("checkin", deviceName, romVersion, null);
-				tracker.close();
-			}
-    		
             // report to the cmstats service
             HttpClient httpClient = new DefaultHttpClient();
             HttpPost httpPost = new HttpPost(romStatsUrl + "submit");
@@ -141,7 +128,7 @@ public class ReportingService extends Service {
 
             return success;
         }
-        
+
         @Override
 		protected void onPostExecute(Boolean result) {
 			final Context context = ReportingService.this;
@@ -152,7 +139,7 @@ public class ReportingService extends Service {
 
 				// save the current date for future checkins
 				prefs.edit().putLong(Const.ANONYMOUS_LAST_CHECKED, System.currentTimeMillis()).apply();
-				
+
 				// save a hashed rom version (used to to an immediate checkin in case of new rom version
 	    		prefs.edit().putString(Const.ANONYMOUS_LAST_REPORT_VERSION, Utilities.getRomVersionHash()).apply();
 
@@ -186,5 +173,5 @@ public class ReportingService extends Service {
 
 		nm.notify(Utilities.NOTIFICATION_ID, notification);
 	}
- 
+
 }

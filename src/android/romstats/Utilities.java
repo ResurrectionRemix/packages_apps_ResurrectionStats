@@ -65,7 +65,7 @@ public class Utilities {
 		if (returnUrl.isEmpty()) {
 			return null;
 		}
-		
+
 		// if the last char of the link is not /, add it
 		if (!returnUrl.substring(returnUrl.length() - 1).equals("/")) {
 			returnUrl += "/";
@@ -116,12 +116,12 @@ public class Utilities {
 	public static String getRomVersion() {
 		return SystemProperties.get("ro.romstats.version");
 	}
-	
+
 	public static String getRomVersionHash() {
 		String romHash = getRomName() + getRomVersion();
 		return digest(romHash);
 	}
-	
+
 	public static long getTimeFrame() {
 		String tFrameStr = SystemProperties.get("ro.romstats.tframe", "7");
 		return Long.valueOf(tFrameStr);
@@ -135,7 +135,7 @@ public class Utilities {
 			return null;
 		}
 	}
-	
+
 	public static String getSigningCert(Context context) {
 		PackageInfo packageInfo = null;
 
@@ -145,41 +145,26 @@ public class Utilities {
 			e.printStackTrace();
 		}
 		Signature[] signatures = packageInfo.signatures;
-		
+
 		String signingCertHash = digest(signatures[0].toCharsString());
-		
+
 		return signingCertHash;
 	}
-	
-	public static String getGaTracking() {
-		String gaTracking = SystemProperties.get("ro.romstats.ga");
-		
-		if (gaTracking.isEmpty()) {
-			return null;
-		}
-		
-		return gaTracking;
-	}
-	
+
+
 	/**
 	 * Gets the Ask First value
 	 * 0: RomStats will behave like CMStats, starts reporting automatically after the tframe (default)
 	 * 1: RomStats will behave like the old CMStats, asks the user on first boot
-	 * 
+	 *
 	 * @return boolean
 	 */
 	public static int getReportingMode() {
-		String askFirst = SystemProperties.get("ro.romstats.askfirst", "0");
-		
-		if ("0".equals(askFirst)) {
-			return Const.ROMSTATS_REPORTING_MODE_NEW;
-		} else {
-			return Const.ROMSTATS_REPORTING_MODE_OLD;
-		}
+			return 0;
 	}
-	
+
 	/**
-	 * 
+	 *
 	 * @param context
 	 * @return
 	 * 	false: opt out cookie not present, work normally
@@ -187,34 +172,34 @@ public class Utilities {
 	 */
 	public static boolean persistentOptOut(Context context) {
 		SharedPreferences prefs = AnonymousStats.getPreferences(context);
-		
+
 		Log.d(Const.TAG, "[checkPersistentOptOut] Check prefs exist: " + prefs.contains(Const.ANONYMOUS_OPT_IN));
 		if (!prefs.contains(Const.ANONYMOUS_OPT_IN)) {
 			Log.d(Const.TAG, "[checkPersistentOptOut] New install, check for 'Persistent cookie'");
-			
+
 			File sdCard = Environment.getExternalStorageDirectory();
 			File dir = new File (sdCard.getAbsolutePath() + "/.ROMStats");
 			File cookieFile = new File(dir, "optout");
-			
+
 			if (cookieFile.exists()) {
 				// if cookie exists, disable everything by setting:
 				//   OPT_IN = false
 				//   FIRST_BOOT = false
 				Log.d(Const.TAG, "[checkPersistentOptOut] Persistent cookie exists -> Disable everything");
-				
+
 				prefs.edit().putBoolean(Const.ANONYMOUS_OPT_IN, false).apply();
 				prefs.edit().putBoolean(Const.ANONYMOUS_FIRST_BOOT, false).apply();
-				
+
 				SharedPreferences mainPrefs = PreferenceManager.getDefaultSharedPreferences(context);
 				mainPrefs.edit().putBoolean(Const.ANONYMOUS_OPT_IN, false).apply();
 				mainPrefs.edit().putBoolean(Const.ANONYMOUS_OPT_OUT_PERSIST, true).apply();
-				
+
 				return true;
 			} else {
 				Log.d(Const.TAG, "[checkPersistentOptOut] No persistent cookie found");
 			}
 		};
-		
+
 		return false;
 	}
 
@@ -222,7 +207,7 @@ public class Utilities {
 		File sdCard = Environment.getExternalStorageDirectory();
 		File dir = new File (sdCard.getAbsolutePath() + "/.ROMStats");
 		File cookieFile = new File(dir, "hide_icon");
-		
+
 		PackageManager p = context.getPackageManager();
 		ComponentName componentToDisable = new ComponentName("android.romstats", "android.romstats.AnonymousStats");
 		if (cookieFile.exists()) {
@@ -233,6 +218,6 @@ public class Utilities {
 			p.setComponentEnabledSetting(componentToDisable, PackageManager.COMPONENT_ENABLED_STATE_ENABLED, PackageManager.DONT_KILL_APP);
 		}
 	}
-	
-	
+
+
 }
