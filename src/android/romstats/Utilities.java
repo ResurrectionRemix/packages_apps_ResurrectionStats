@@ -114,7 +114,7 @@ public class Utilities {
 	}
 
 	public static String getRomVersion() {
-		return "5.7.0";
+		return "5.7.1";
 	}
 
 	public static String getRomVersionHash() {
