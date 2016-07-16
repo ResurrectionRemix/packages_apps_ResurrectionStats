@@ -40,8 +40,7 @@
   <string name="last_report_on">最後の送信</string>
   <string name="reporting_interval">送信周期</string>
   <plurals name="reporting_interval_days">
-    <item quantity="other">1日
-%d日</item>
+    <item quantity="other">%d日ごと</item>
   </plurals>
   <string name="next_report_on">次の統計情報</string>
   <string name="app_signature">アプリ署名</string>
