@@ -20,7 +20,7 @@
   <string name="main_title">Anonyme Nutzungsdaten</string>
   <!-- Notification -->
   <string name="notification_ticker">Freigegebene Statistiken</string>
-  <string name="notification_title">ROM Statistiken</string>
+  <string name="notification_title">ROM-Statistiken</string>
   <string name="notification_desc">Anonymen Statistiken aktivieren oder deaktivieren</string>
   <string name="main_link">&lt;a href=&quot;http://www.cyanogenmod.org/blog/cmstats-what-it-is-and-why-you-should-opt-in&quot;&gt;Mehr lernen&lt;/a&gt;</string>
   <!-- Anonymous Statistics #CM -->
