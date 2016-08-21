@@ -15,11 +15,11 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_name">RR Statistics</string>
+  <string name="app_name">RR Tilastot</string>
   <!-- Main -->
-  <string name="main_title">Anonymous Usage Data</string>
+  <string name="main_title">Nimetön käyttödata</string>
   <!-- Notification -->
-  <string name="notification_ticker">Statistics Opted-In</string>
+  <string name="notification_ticker">Osallistuminen tilastoihin</string>
   <string name="notification_title">ROM Statistics</string>
   <string name="notification_desc">Enable or Disable Anonymous Statistics</string>
   <string name="main_link">&lt;a href=&quot;http://www.cyanogenmod.org/blog/cmstats-what-it-is-and-why-you-should-opt-in&quot;&gt;Learn More&lt;/a&gt;</string>

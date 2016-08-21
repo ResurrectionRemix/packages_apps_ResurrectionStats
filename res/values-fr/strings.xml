@@ -27,7 +27,7 @@
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
   <string name="anonymous_statistics_title">Statistiques relatives à la ROM</string>
   <string name="anonymous_statistics_summary">Contribuez à rendre cette ROM meilleure en envoyant des rapports de statistiques anonymes</string>
-  <string name="anonymous_statistics_warning_title">À propos de</string>
+  <string name="anonymous_statistics_warning_title">À propos</string>
   <string name="anonymous_statistics_warning">Participer aux statistiques de la ROM permettra l\'envoi de données anonymes
         aux développeurs afin qu\'ils sachent le nombre d\'installations uniques par appareil. L\'information fournie inclut un identifiant unique,
         qui ne compromet pas votre vie privée ou vos données personnelles. Les données sont envoyées au cours de chaque démarrage.\n\nPour découvrir un exemple de données envoyées, appuyer sur Aperçu des données.</string>
@@ -61,8 +61,8 @@
   <string name="preview_romname_title">Nom de la ROM</string>
   <string name="preview_romversion_title">Version de la ROM</string>
   <string name="pref_info">À propos &amp; Support</string>
-  <string name="pref_info_about">À propos de</string>
-  <string name="pref_info_changelog">Historique des modifications</string>
+  <string name="pref_info_about">À propos</string>
+  <string name="pref_info_changelog">Journal des modifications</string>
   <string name="pref_info_changelog_desc">Afficher le journal des modifications</string>
   <string name="pref_info_website">Google+</string>
   <string name="pref_info_website_url">https://plus.google.com/u/0/communities/109352646351468373340</string>

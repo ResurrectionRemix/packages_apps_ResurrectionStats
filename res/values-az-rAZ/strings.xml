@@ -15,11 +15,11 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_name">RR Statistics</string>
+  <string name="app_name">RR statistikaları</string>
   <!-- Main -->
-  <string name="main_title">Anonymous Usage Data</string>
+  <string name="main_title">Anonim istfadə datası</string>
   <!-- Notification -->
-  <string name="notification_ticker">Statistics Opted-In</string>
+  <string name="notification_ticker">Statistika seçin</string>
   <string name="notification_title">ROM Statistics</string>
   <string name="notification_desc">Enable or Disable Anonymous Statistics</string>
   <string name="main_link">&lt;a href=&quot;http://www.cyanogenmod.org/blog/cmstats-what-it-is-and-why-you-should-opt-in&quot;&gt;Learn More&lt;/a&gt;</string>
@@ -49,21 +49,21 @@
   <string name="app_signature">App signature</string>
   <string name="pref_hideicon">Hide icon from launcher</string>
   <string name="pref_hideicon_desc">Application launcher icon will be hidden from your App Drawer</string>
-  <string name="pref_uninstall">Uninstall</string>
-  <string name="btn_yes">Yes</string>
-  <string name="btn_no">No</string>
+  <string name="pref_uninstall">Quraşdırmanı ləğv et</string>
+  <string name="btn_yes">Bəli</string>
+  <string name="btn_no">Xeyr</string>
   <!-- Anonymous Statistics - Preview -->
-  <string name="preview_id_title">Unique ID</string>
-  <string name="preview_device_title">Device</string>
-  <string name="preview_version_title">Version</string>
-  <string name="preview_country_title">Country</string>
-  <string name="preview_carrier_title">Carrier</string>
-  <string name="preview_romname_title">ROM Name</string>
-  <string name="preview_romversion_title">ROM Version</string>
-  <string name="pref_info">About &amp; Support</string>
-  <string name="pref_info_about">About</string>
-  <string name="pref_info_changelog">Change log</string>
-  <string name="pref_info_changelog_desc">Show the change log</string>
+  <string name="preview_id_title">Unikal İD</string>
+  <string name="preview_device_title">Cihaz</string>
+  <string name="preview_version_title">Versiya</string>
+  <string name="preview_country_title">Ölkə</string>
+  <string name="preview_carrier_title">Operator</string>
+  <string name="preview_romname_title">ROM Adı</string>
+  <string name="preview_romversion_title">ROM Versiyası</string>
+  <string name="pref_info">&amp; Haqqında</string>
+  <string name="pref_info_about">Haqında</string>
+  <string name="pref_info_changelog">Yeniliklər</string>
+  <string name="pref_info_changelog_desc">Yenilikləri göstər</string>
   <string name="pref_info_website">Google+</string>
   <string name="pref_info_website_url">https://plus.google.com/u/0/communities/109352646351468373340</string>
 </resources>
