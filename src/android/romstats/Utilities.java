@@ -60,7 +60,7 @@ public class Utilities {
 	}
 
 	public static String getStatsUrl() {
-		String returnUrl = SystemProperties.get("ro.romstats.url");
+		String returnUrl = Const.STATS_URL;
 
 		if (returnUrl.isEmpty()) {
 			return null;
@@ -110,11 +110,11 @@ public class Utilities {
 	}
 
 	public static String getRomName() {
-		return SystemProperties.get("ro.romstats.name");
+		return Const.ROMNAME;
 	}
 
 	public static String getRomVersion() {
-		return "5.7.3";
+		return Const.RR_VERSION;
 	}
 
 	public static String getRomVersionHash() {
@@ -123,8 +123,7 @@ public class Utilities {
 	}
 
 	public static long getTimeFrame() {
-		String tFrameStr = SystemProperties.get("ro.romstats.tframe", "7");
-		return Long.valueOf(tFrameStr);
+		return Const.TIMEFRAME;
 	}
 
 	public static String digest(String input) {
