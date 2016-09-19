@@ -19,7 +19,7 @@
   <!-- Main -->
   <string name="main_title">अनाम उपयोग डेटा</string>
   <!-- Notification -->
-  <string name="notification_ticker">Statistics Opted-In</string>
+  <string name="notification_ticker">सांख्यिकी का चुनाव</string>
   <string name="notification_title">रोम आंकड़े</string>
   <string name="notification_desc">अनाम आंकड़ों को अक्षम या सक्षम करे</string>
   <string name="main_link">&lt;a href=&quot;http://www.cyanogenmod.org/blog/cmstats-what-it-is-and-why-you-should-opt-in&quot;&gt;Learn More&lt;/a&gt;</string>

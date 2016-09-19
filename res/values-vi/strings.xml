@@ -15,54 +15,52 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_name">RR Statistics</string>
+  <string name="app_name">Thống kê RR</string>
   <!-- Main -->
-  <string name="main_title">Anonymous Usage Data</string>
+  <string name="main_title">Chưa xác định dữ liệu sử dụng</string>
   <!-- Notification -->
-  <string name="notification_ticker">Statistics Opted-In</string>
-  <string name="notification_title">ROM Statistics</string>
-  <string name="notification_desc">Enable or Disable Anonymous Statistics</string>
-  <string name="main_link">&lt;a href=&quot;http://www.cyanogenmod.org/blog/cmstats-what-it-is-and-why-you-should-opt-in&quot;&gt;Learn More&lt;/a&gt;</string>
+  <string name="notification_ticker">Thống kê tham gia</string>
+  <string name="notification_title">Thống kê ROM</string>
+  <string name="notification_desc">Bẩ hoặc vô hiệu hóa số liệu thống kê chưa xác định người dùng</string>
+  <string name="main_link">&lt;a href=&quot;http://www.cyanogenmod.org/blog/cmstats-what-it-is-and-why-you-should-opt-in&quot;&gt;Tìm hiểu thêm&lt;/a&gt;</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-  <string name="anonymous_statistics_title">ROM Statistics</string>
-  <string name="anonymous_statistics_summary">Help make this ROM better by opting into anonymous statistics reporting</string>
-  <string name="anonymous_statistics_warning_title">About</string>
-  <string name="anonymous_statistics_warning">Opting into ROM Statistics will allow non-personal data to be submitted to the
-        developers of the ROM to track unique installations across devices. The information submitted includes an unique identifier,
-        which does not compromise your privacy or personal data. The data is submitted on a regular interval decided by the ROM developer.\n\nFor an example of the data that is submitted, tap on Preview Data.</string>
-  <string name="pref_settings">Settings</string>
-  <string name="enable_reporting_title">Enable reporting</string>
-  <string name="disable_reporting_persistent">Persistent opt-out</string>
-  <string name="preview_data_title">Preview data</string>
+  <string name="anonymous_statistics_title">Thống kê ROM</string>
+  <string name="anonymous_statistics_summary">Giúp ROM này phát triển bằng cách chọn tham gia báo cáo thống kê ẩn danh</string>
+  <string name="anonymous_statistics_warning_title">Thông tin về</string>
+  <string name="anonymous_statistics_warning">Chọn tham gia thống kê ROM sẽ cho phép gửi dữ liệu không liên quan đến cá nhân đến những nhà phát triển ROM để theo dõi số lượt cài đặt trên các thiết bị. Thông tin đã gửi sẽ bao gồm một nhận dạng duy nhất, nó sẽ không ảnh hưởng đến sự riêng tư hoặc dữ liệu cá nhân của bạn. Dữ liệu được gửi mỗi tuần một lần, trong lúc khởi động.\n\nĐể xem mẫu dữ liệu được gửi, chạm vào Xem trước dữ liệu.</string>
+  <string name="pref_settings">Cài đặt</string>
+  <string name="enable_reporting_title">Cho phéo báo cáo</string>
+  <string name="disable_reporting_persistent">Liên tục chọn không tham gia</string>
+  <string name="preview_data_title">Xem trước dữ liệu</string>
   <string name="preview_data_summary">%s</string>
-  <string name="view_stats_title">View stats</string>
-  <string name="anonymous_learn_more">Learn more</string>
-  <string name="pref_stats">Information</string>
-  <string name="last_report_on">Last reported</string>
-  <string name="reporting_interval">Reporting interval</string>
+  <string name="view_stats_title">Xem thống kê</string>
+  <string name="anonymous_learn_more">Tìm hiểu thêm</string>
+  <string name="pref_stats">Thông tin</string>
+  <string name="last_report_on">Báo cáo cuối cùng</string>
+  <string name="reporting_interval">Khoảng thời gian báo cáo</string>
   <plurals name="reporting_interval_days">
-    <item quantity="other">%d days</item>
+    <item quantity="other">%d ngày</item>
   </plurals>
-  <string name="next_report_on">Next report</string>
-  <string name="app_signature">App signature</string>
-  <string name="pref_hideicon">Hide icon from launcher</string>
-  <string name="pref_hideicon_desc">Application launcher icon will be hidden from your App Drawer</string>
-  <string name="pref_uninstall">Uninstall</string>
-  <string name="btn_yes">Yes</string>
-  <string name="btn_no">No</string>
+  <string name="next_report_on">Báo cáo tiếp theo</string>
+  <string name="app_signature">Chữ kí ứng dụng</string>
+  <string name="pref_hideicon">Ẩn các biểu tượng từ launcher</string>
+  <string name="pref_hideicon_desc">Biểu tượng ứng dụng từ launcher sẽ được ẩn từ ngăn kéo ứng dụng của bạn</string>
+  <string name="pref_uninstall">Gỡ cài đặt</string>
+  <string name="btn_yes">Có</string>
+  <string name="btn_no">Không</string>
   <!-- Anonymous Statistics - Preview -->
-  <string name="preview_id_title">Unique ID</string>
-  <string name="preview_device_title">Device</string>
-  <string name="preview_version_title">Version</string>
-  <string name="preview_country_title">Country</string>
-  <string name="preview_carrier_title">Carrier</string>
-  <string name="preview_romname_title">ROM Name</string>
-  <string name="preview_romversion_title">ROM Version</string>
-  <string name="pref_info">About &amp; Support</string>
-  <string name="pref_info_about">About</string>
-  <string name="pref_info_changelog">Change log</string>
-  <string name="pref_info_changelog_desc">Show the change log</string>
+  <string name="preview_id_title">ID duy nhất</string>
+  <string name="preview_device_title">Thiết bị</string>
+  <string name="preview_version_title">Phiên bản</string>
+  <string name="preview_country_title">Quốc gia</string>
+  <string name="preview_carrier_title">Nhà mạng</string>
+  <string name="preview_romname_title">Tên ROM</string>
+  <string name="preview_romversion_title">Phiên bản ROM</string>
+  <string name="pref_info">Về &amp; hổ trợ</string>
+  <string name="pref_info_about">Thông tin về</string>
+  <string name="pref_info_changelog">Thay đổi gần đây</string>
+  <string name="pref_info_changelog_desc">Hiển thị thay đổi</string>
   <string name="pref_info_website">Google+</string>
   <string name="pref_info_website_url">https://plus.google.com/u/0/communities/109352646351468373340</string>
 </resources>
