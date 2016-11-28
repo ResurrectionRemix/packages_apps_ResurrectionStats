@@ -15,20 +15,20 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_name">RR Estatísticas</string>
+  <string name="app_name">Estatísticas RR</string>
   <!-- Main -->
   <string name="main_title">Uso de dados anônimo</string>
   <!-- Notification -->
-  <string name="notification_ticker">Estatísticas optaram por</string>
+  <string name="notification_ticker">Optar por Estatísticas</string>
   <string name="notification_title">Estatísticas da ROM</string>
   <string name="notification_desc">Habilitar ou desabilitar estatísticas anónimas</string>
-  <string name="main_link">&lt;a href=&quot;http://www.cyanogenmod.org/blog/cmstats-what-it-is-and-why-you-should-opt-in&quot;&gt;Learn More&lt;/a&gt;</string>
+  <string name="main_link">&lt;a href=&quot;http://www.cyanogenmod.org/blog/cmstats-what-it-is-and-why-you-should-opt-in&quot;&gt;Leia mais&lt;/a&gt;</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
   <string name="anonymous_statistics_title">Estatísticas da ROM</string>
   <string name="anonymous_statistics_summary">Ajude a fazer essa ROM melhor optando por enviar dados de uso anônimos</string>
   <string name="anonymous_statistics_warning_title">Sobre</string>
-  <string name="anonymous_statistics_warning">Optando em ROM Estatísticas permitirá que os dados não-pessoais para ser submetido à
+  <string name="anonymous_statistics_warning">Optando em Estatísticas da ROM permitirá que os dados não-pessoais para ser submetido à
         desenvolvedores da ROM para acompanhar instalações únicas em vários dispositivos. A informação apresentada inclui um identificador único,
         que não comprometa a sua privacidade ou dados pessoais. Os dados são apresentados em um intervalo regular decidido pelo desenvolvedor da ROM. \n\nPara um exemplo dos dados que é apresentado, toque na visualização de dados.</string>
   <string name="pref_settings">Configurações</string>
@@ -37,7 +37,7 @@
   <string name="preview_data_title">Pré-visualizar Dados</string>
   <string name="preview_data_summary">%s </string>
   <string name="view_stats_title">Ver estatísticas</string>
-  <string name="anonymous_learn_more">Saber mais</string>
+  <string name="anonymous_learn_more">Saiba mais</string>
   <string name="pref_stats">Informação</string>
   <string name="last_report_on">Último relatório</string>
   <string name="reporting_interval">Intervalo de relatórios</string>

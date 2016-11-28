@@ -37,7 +37,7 @@
   <string name="view_stats_title">Statistieken tonen</string>
   <string name="anonymous_learn_more">Meer info</string>
   <string name="pref_stats">Informatie</string>
-  <string name="last_report_on">Laatst gerapporteerd</string>
+  <string name="last_report_on">Laatst gemeld</string>
   <string name="reporting_interval">Rapport interval</string>
   <plurals name="reporting_interval_days">
     <item quantity="one">1 dag</item>
@@ -47,7 +47,7 @@
   <string name="app_signature">App handtekening</string>
   <string name="pref_hideicon">Verberg icoon van de launcher</string>
   <string name="pref_hideicon_desc">Applicatie launcher icoon wordt verborgen in uw App Drawer</string>
-  <string name="pref_uninstall">Verwijderen</string>
+  <string name="pref_uninstall">Deïnstalleren</string>
   <string name="btn_yes">Ja</string>
   <string name="btn_no">Nee</string>
   <!-- Anonymous Statistics - Preview -->
@@ -58,7 +58,7 @@
   <string name="preview_carrier_title">Provider</string>
   <string name="preview_romname_title">ROM Naam</string>
   <string name="preview_romversion_title">ROM versie</string>
-  <string name="pref_info">Oveer &amp; Ondersteuning</string>
+  <string name="pref_info">Over &amp; Ondersteuning</string>
   <string name="pref_info_about">Over</string>
   <string name="pref_info_changelog">Wijzigingen</string>
   <string name="pref_info_changelog_desc">Toon de lijst van wijzigingen</string>

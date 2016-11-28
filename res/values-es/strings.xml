@@ -15,7 +15,7 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_name">Estadísticas RR</string>
+  <string name="app_name">Estadísticas de RR</string>
   <!-- Main -->
   <string name="main_title">Datos de uso anónimos</string>
   <!-- Notification -->
@@ -53,7 +53,7 @@
   <!-- Anonymous Statistics - Preview -->
   <string name="preview_id_title">ID único</string>
   <string name="preview_device_title">Dispositivo</string>
-  <string name="preview_version_title">Version</string>
+  <string name="preview_version_title">Versión</string>
   <string name="preview_country_title">Pais</string>
   <string name="preview_carrier_title">Operadora móvil</string>
   <string name="preview_romname_title">Nombre de la ROM</string>

@@ -27,44 +27,12 @@
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
   <string name="anonymous_statistics_title">Статистике о РОМу</string>
   <string name="anonymous_statistics_summary">Помозите да побољшамо овај РОМ слањем анонимних статистичких извештаја</string>
-  <string name="anonymous_statistics_warning_title">О програму</string>
+  <string name="anonymous_statistics_warning_title">О</string>
   <string name="anonymous_statistics_warning">Пријава за слање статистике РОМа дозвољава слање неличних података програмерима
         РОМа да би пратили број јединствених инсталација на уређајима. Послати подаци укључују јединствени идентификатор,
         који не угрожава вашу приватност или личне податке. Подаци се шаљу редовно у интервалу одређеном од стране програмера.\n\nЗа пример послатих података, тапните на Преглед података.</string>
-  <string name="pref_settings">Поставке</string>
-  <string name="enable_reporting_title">Укључи извештавање</string>
-  <string name="disable_reporting_persistent">Одјављен од статистике</string>
-  <string name="preview_data_title">Преглед података</string>
-  <string name="preview_data_summary">%s</string>
-  <string name="view_stats_title">Прикажи статистике</string>
-  <string name="anonymous_learn_more">Сазнајте више</string>
-  <string name="pref_stats">Подаци</string>
-  <string name="last_report_on">Последњи извештај</string>
+  <string name="pref_settings">Подешавања</string>
   <string name="reporting_interval">Интервал извештавања</string>
-  <plurals name="reporting_interval_days">
-    <item quantity="one">1 дан</item>
-    <item quantity="few">%d дана</item>
-    <item quantity="other">%d дана</item>
-  </plurals>
-  <string name="next_report_on">Следећи извештај</string>
-  <string name="app_signature">Потпис апликације</string>
-  <string name="pref_hideicon">Сакриј икону са покретача</string>
-  <string name="pref_hideicon_desc">Икона покретача апликације ће бити скривена са ваше фиоке апликација</string>
-  <string name="pref_uninstall">Уклони</string>
-  <string name="btn_yes">Да</string>
   <string name="btn_no">Не</string>
   <!-- Anonymous Statistics - Preview -->
-  <string name="preview_id_title">Јединствени ИД</string>
-  <string name="preview_device_title">Уређај</string>
-  <string name="preview_version_title">Издање</string>
-  <string name="preview_country_title">Држава</string>
-  <string name="preview_carrier_title">Мобилни оператер</string>
-  <string name="preview_romname_title">Назив РОМа</string>
-  <string name="preview_romversion_title">Издање РОМа</string>
-  <string name="pref_info">О програму и подршка</string>
-  <string name="pref_info_about">О програму</string>
-  <string name="pref_info_changelog">Дневник измена</string>
-  <string name="pref_info_changelog_desc">Прикажи дневник измена</string>
-  <string name="pref_info_website">Гугл+</string>
-  <string name="pref_info_website_url">https://plus.google.com/u/0/communities/109352646351468373340</string>
 </resources>

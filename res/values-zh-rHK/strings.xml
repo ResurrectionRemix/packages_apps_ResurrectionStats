@@ -19,7 +19,7 @@
   <!-- Main -->
   <string name="main_title">匿名使用率數據</string>
   <!-- Notification -->
-  <string name="notification_ticker">已加入統計數據</string>
+  <string name="notification_ticker">已加入的統計數據</string>
   <string name="notification_title">ROM 數據統計</string>
   <string name="notification_desc">啟用或停用匿名統計</string>
   <string name="main_link">&lt;a href=&quot;http://www.cyanogenmod.org/blog/cmstats-what-it-is-and-why-you-should-opt-in&quot;&gt;瞭解更多&lt;/a&gt;</string>
@@ -29,7 +29,7 @@
   <string name="anonymous_statistics_summary">啟用匿名統計報告以便協助 ROM 開發</string>
   <string name="anonymous_statistics_warning_title">關於</string>
   <string name="anonymous_statistics_warning">加入 ROM 統計將允許非個人資料被提交到 ROM 的開發者，以追蹤每個裝置上的獨特安裝。提交的資訊包含一個唯一識別碼，此識別碼並不會泄露您的隱私或個人資料。該資料會在開發者決定的時間間隔提交。\n\n輕按預覽資料以預覽被提交資料的例子。</string>
-  <string name="pref_settings">設定</string>
+  <string name="pref_settings">設置</string>
   <string name="enable_reporting_title">啟用報告</string>
   <string name="disable_reporting_persistent">永久退出</string>
   <string name="preview_data_title">預覽數據</string>

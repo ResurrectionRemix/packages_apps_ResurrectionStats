@@ -41,7 +41,7 @@
   <string name="reporting_interval">Interval hlášení</string>
   <plurals name="reporting_interval_days">
     <item quantity="one">1 den</item>
-    <item quantity="few">%d dny</item>
+    <item quantity="few">%d dní</item>
     <item quantity="other">%d dní</item>
   </plurals>
   <string name="next_report_on">Další hlášení</string>
