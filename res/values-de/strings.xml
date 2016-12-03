@@ -39,6 +39,10 @@
   <string name="pref_stats">Informationen</string>
   <string name="last_report_on">Zuletzt gemeldet</string>
   <string name="reporting_interval">Berichtsintervall</string>
+  <plurals name="reporting_interval_days">
+    <item quantity="one">1 Tag</item>
+    <item quantity="other">%d Tage</item>
+  </plurals>
   <string name="next_report_on">Nächster Bericht</string>
   <string name="app_signature">App-Signatur</string>
   <string name="pref_hideicon">Symbol nicht im Launcher anzeigen</string>
@@ -47,7 +51,7 @@
   <string name="btn_yes">Ja</string>
   <string name="btn_no">Nein</string>
   <!-- Anonymous Statistics - Preview -->
-  <string name="preview_id_title">Einzigartige ID</string>
+  <string name="preview_id_title">Eindeutige ID</string>
   <string name="preview_device_title">Gerät</string>
   <string name="preview_version_title">Version</string>
   <string name="preview_country_title">Land</string>

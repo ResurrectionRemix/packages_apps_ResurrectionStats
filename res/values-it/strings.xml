@@ -17,7 +17,7 @@
 <resources>
   <string name="app_name">Statistiche RR</string>
   <!-- Main -->
-  <string name="main_title">Utilizzo dei dati anonimo</string>
+  <string name="main_title">Utilizzo Dati Anonimo</string>
   <!-- Notification -->
   <string name="notification_ticker">Statistiche Opted-In</string>
   <string name="notification_title">Statistiche ROM</string>
@@ -39,6 +39,10 @@
   <string name="pref_stats">Informazione</string>
   <string name="last_report_on">Ultima segnalazione</string>
   <string name="reporting_interval">Intervallo segnalazioni</string>
+  <plurals name="reporting_interval_days">
+    <item quantity="one">1 giorno</item>
+    <item quantity="other">%d giorni</item>
+  </plurals>
   <string name="next_report_on">Prossima segnalazione</string>
   <string name="app_signature">Firma app</string>
   <string name="pref_hideicon">Nascondi l\'icona dal launcher</string>

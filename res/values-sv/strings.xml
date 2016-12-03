@@ -15,9 +15,37 @@
      limitations under the License.
 -->
 <resources>
+  <string name="app_name">RR statistik</string>
   <!-- Main -->
   <!-- Notification -->
+  <string name="notification_title">ROM statistik</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
+  <string name="anonymous_statistics_title">ROM statistik</string>
+  <string name="anonymous_statistics_warning_title">Om</string>
+  <string name="pref_settings">Inställningar</string>
+  <string name="preview_data_title">Förhandsgranska data</string>
+  <string name="view_stats_title">Visa statistik</string>
+  <string name="anonymous_learn_more">Läs mer</string>
+  <string name="pref_stats">Information</string>
+  <plurals name="reporting_interval_days">
+    <item quantity="one">1 dag</item>
+    <item quantity="other">%d dagar</item>
+  </plurals>
+  <string name="pref_uninstall">Avinstallera</string>
+  <string name="btn_yes">Ja</string>
+  <string name="btn_no">Nej</string>
   <!-- Anonymous Statistics - Preview -->
+  <string name="preview_device_title">Enhet</string>
+  <string name="preview_version_title">Version</string>
+  <string name="preview_country_title">Land</string>
+  <string name="preview_carrier_title">Operatör</string>
+  <string name="preview_romname_title">ROM namn</string>
+  <string name="preview_romversion_title">ROM Version</string>
+  <string name="pref_info">Hjälp &amp; Support</string>
+  <string name="pref_info_about">Om</string>
+  <string name="pref_info_changelog">Ändringslogg</string>
+  <string name="pref_info_changelog_desc">Visa ändringsloggen</string>
+  <string name="pref_info_website">Google+</string>
+  <string name="pref_info_website_url">https://plus.google.com/u/0/communities/109352646351468373340</string>
 </resources>

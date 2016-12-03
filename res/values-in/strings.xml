@@ -26,5 +26,34 @@
   <string name="anonymous_statistics_title">Statistik ROM</string>
   <string name="anonymous_statistics_summary">Bantu ROM ini menjadi lebih baik dengan mengikuti pelaporan statistik anonim</string>
   <string name="anonymous_statistics_warning_title">Tentang</string>
+  <string name="pref_settings">Pengaturan</string>
+  <string name="enable_reporting_title">Aktifkan pelaporan</string>
+  <string name="preview_data_title">Pratinjau data</string>
+  <string name="preview_data_summary">%s</string>
+  <string name="view_stats_title">Lihat statistik</string>
+  <string name="anonymous_learn_more">Pelajari selengkapnya</string>
+  <string name="pref_stats">Info</string>
+  <string name="last_report_on">Terakhir dilaporkan</string>
+  <plurals name="reporting_interval_days">
+    <item quantity="other">%d hari</item>
+  </plurals>
+  <string name="next_report_on">Laporan berikutnya</string>
+  <string name="pref_hideicon">Sembunyikan ikon pada launcher</string>
+  <string name="pref_uninstall">Copot pemasangan</string>
+  <string name="btn_yes">Ya</string>
+  <string name="btn_no">Tidak</string>
   <!-- Anonymous Statistics - Preview -->
+  <string name="preview_id_title">ID Unik</string>
+  <string name="preview_device_title">Perangkat</string>
+  <string name="preview_version_title">Versi</string>
+  <string name="preview_country_title">Negara</string>
+  <string name="preview_carrier_title">Operator</string>
+  <string name="preview_romname_title">Nama ROM</string>
+  <string name="preview_romversion_title">Versi ROM</string>
+  <string name="pref_info">Tentang &amp; Dukungan</string>
+  <string name="pref_info_about">Tentang</string>
+  <string name="pref_info_changelog">Catatan perubahan</string>
+  <string name="pref_info_changelog_desc">Tampilkan catatan perubahan</string>
+  <string name="pref_info_website">Google+</string>
+  <string name="pref_info_website_url">https://plus.google.com/u/0/communities/109352646351468373340</string>
 </resources>
