@@ -21,7 +21,7 @@
   <!-- Notification -->
   <string name="notification_ticker">Statistiche Opted-In</string>
   <string name="notification_title">Statistiche ROM</string>
-  <string name="notification_desc">Abilita o Disabilita Statistiche Anonime</string>
+  <string name="notification_desc">Attiva o Disattiva Statistiche Anonime</string>
   <string name="main_link">&lt;a href=&quot;http://www.cyanogenmod.org/blog/cmstats-what-it-is-and-why-you-should-opt-in&quot;&gt;ulteriori informazioni&lt;/a&gt;</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->

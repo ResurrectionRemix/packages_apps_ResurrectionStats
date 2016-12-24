@@ -15,9 +15,11 @@
      limitations under the License.
 -->
 <resources>
+  <string name="app_name">RR statistik</string>
   <!-- Main -->
   <!-- Notification -->
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
+  <string name="anonymous_statistics_title">ROM Statistik</string>
   <!-- Anonymous Statistics - Preview -->
 </resources>

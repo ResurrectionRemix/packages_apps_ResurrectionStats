@@ -17,6 +17,7 @@
 <resources>
   <string name="app_name">حالة النظام</string>
   <!-- Main -->
+  <string name="main_title">بيانات استخدام مجهولة</string>
   <!-- Notification -->
   <string name="notification_ticker">إحصائيات اختار في</string>
   <string name="notification_title">احصائيات الروم</string>
@@ -36,12 +37,14 @@
   <string name="anonymous_learn_more">لمعرفة المزيد</string>
   <string name="pref_stats">معلومات</string>
   <string name="last_report_on">اخر التقارير</string>
+  <string name="reporting_interval">الفاصل الزمني للتقرير</string>
   <string name="next_report_on">التقرير القادم</string>
   <string name="app_signature">توقيع التطبيق</string>
   <string name="pref_uninstall">إلغاء التثبيت</string>
   <string name="btn_yes">نعم</string>
   <string name="btn_no">لا</string>
   <!-- Anonymous Statistics - Preview -->
+  <string name="preview_id_title">المعرف الفريد</string>
   <string name="preview_device_title">الجهاز</string>
   <string name="preview_version_title">الإصدار</string>
   <string name="preview_country_title">البلد</string>

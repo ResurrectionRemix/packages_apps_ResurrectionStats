@@ -39,6 +39,11 @@
   <string name="pref_stats">Informácie</string>
   <string name="last_report_on">Posledné hlásené</string>
   <string name="reporting_interval">Interval hlásení</string>
+  <plurals name="reporting_interval_days">
+    <item quantity="one">1 deň</item>
+    <item quantity="few">%d dní</item>
+    <item quantity="other">%d dní</item>
+  </plurals>
   <string name="next_report_on">Ďalšia správa</string>
   <string name="app_signature">Podpis aplikácie</string>
   <string name="pref_hideicon">Skryť ikonu launcheru</string>

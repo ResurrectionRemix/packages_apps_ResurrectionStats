@@ -22,16 +22,16 @@
   <string name="notification_ticker">Στατιστικά που έχουν επιλεγεί</string>
   <string name="notification_title">Στατιστικά στοιχεία</string>
   <string name="notification_desc">Ενεργοποίηση ή απενεργοποίηση ανώνυμων στατιστικών</string>
-  <string name="main_link">&lt;a href=&quot;http://www.cyanogenmod.org/blog/cmstats-what-it-is-and-why-you-should-opt-in&quot;&gt;Learn More&lt;/a&gt;</string>
+  <string name="main_link">&lt;a href=&quot;http://www.cyanogenmod.org/blog/cmstats-what-it-is-and-why-you-should-opt-in&quot;&gt;Μάθετε περισσότερα&lt;/a&gt;</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
   <string name="anonymous_statistics_title">Στατιστικά στοιχεία</string>
-  <string name="anonymous_statistics_summary">Βοηθήστε να γίνει το ROM καλύτερο, επιλέγοντας να στέλνετε ανώνυμες στατιστικές αναφορές</string>
+  <string name="anonymous_statistics_summary">Βοηθήστε να γίνει το λογισμικό καλύτερο, επιλέγοντας να στέλνετε ανώνυμες στατιστικές αναφορές</string>
   <string name="anonymous_statistics_warning_title">Σχετικά</string>
-  <string name="anonymous_statistics_warning">Ενεργοποιώντας τα στατιστικά του PAC επιτρέπετε την αποστολή
-        μη προσωπικών δεδομένων στους προγραμματιστές του PAC για παρακολούθηση του αριθμού μοναδικών εγκαταστάσεων
+  <string name="anonymous_statistics_warning">Ενεργοποιώντας τη συλλογή στατιστικών στοιχείων επιτρέπετε την αποστολή
+        μη προσωπικών δεδομένων στους προγραμματιστές του λογισμικού για παρακολούθηση του αριθμού μοναδικών εγκαταστάσεων
         σε όλες τις συσκευές. Οι πληροφορίες που αποστέλλονται συμπεριλαμβάνουν ένα μοναδικό αναγνωριστικό, το οποίο δεν θέτει
-        σε κίνδυνο την ασφάλεια σας ή τα προσωπικά δεδομένα. Τα δεδομένα αποστέλλονται σε κάθε εκκίνηση.\n\nΓια ένα παράδειγμα
+        σε κίνδυνο την ασφάλειά σας ή τα προσωπικά σας δεδομένα. Τα δεδομένα αποστέλλονται σε κάθε εκκίνηση.\n\nΓια ένα παράδειγμα
         των δεδομένων που αποστέλλονται, πατήστε στην Προεπισκόπηση Δεδομένων.</string>
   <string name="pref_settings">Ρυθμίσεις</string>
   <string name="enable_reporting_title">Ενεργοποίηση αναφορών</string>
@@ -50,18 +50,18 @@
   <string name="next_report_on">Επόμενη αναφορά</string>
   <string name="app_signature">Υπογραφή εφαρμογής</string>
   <string name="pref_hideicon">Απόκρυψη εικονιδίου από τον εκκινιτή</string>
-  <string name="pref_hideicon_desc">Το εικονίδιό της εφαρμογής θα κρυφτεί από το συρτάρι εφαρμογών</string>
+  <string name="pref_hideicon_desc">Το εικονίδιο της εφαρμογής θα κρυφτεί από το συρτάρι εφαρμογών</string>
   <string name="pref_uninstall">Απεγκατάσταση</string>
-  <string name="btn_yes">Ναί</string>
+  <string name="btn_yes">Ναι</string>
   <string name="btn_no">\'Οχι</string>
   <!-- Anonymous Statistics - Preview -->
-  <string name="preview_id_title">Μοναδικό ID</string>
+  <string name="preview_id_title">Μοναδικό αναγνωριστικό</string>
   <string name="preview_device_title">Συσκευή</string>
   <string name="preview_version_title">Έκδοση</string>
   <string name="preview_country_title">Χώρα</string>
   <string name="preview_carrier_title">Πάροχος δικτύου</string>
-  <string name="preview_romname_title">Όνομα ROM</string>
-  <string name="preview_romversion_title">Έκδοση ROM</string>
+  <string name="preview_romname_title">Όνομα λογισμικού</string>
+  <string name="preview_romversion_title">Έκδοση λογισμικού</string>
   <string name="pref_info">Σχετικά &amp; Υποστήριξη</string>
   <string name="pref_info_about">Σχετικά</string>
   <string name="pref_info_changelog">Λίστα αλλαγών</string>
