@@ -39,6 +39,11 @@
   <string name="pref_stats">Инофрмация</string>
   <string name="last_report_on">Последний отчет</string>
   <string name="reporting_interval">Интервал отсылки отчетов</string>
+  <plurals name="reporting_interval_days">
+    <item quantity="one">1 день</item>
+    <item quantity="few">%d день</item>
+    <item quantity="other">%d дня(ей)</item>
+  </plurals>
   <string name="next_report_on">Следующий отчет</string>
   <string name="app_signature">Подпись приложения</string>
   <string name="pref_hideicon">Скрыть значок из меню приложений</string>
