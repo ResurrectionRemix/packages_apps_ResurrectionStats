@@ -15,9 +15,41 @@
      limitations under the License.
 -->
 <resources>
+  <string name="app_name">סטטיסטיקה RR</string>
   <!-- Main -->
+  <string name="main_title">נתוני שימוש אנונימיים</string>
   <!-- Notification -->
+  <string name="notification_desc">אפשר או השבת סטטיסטיקה אנונימית</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
+  <string name="anonymous_statistics_warning_title">אודות</string>
+  <string name="pref_settings">הגדרות</string>
+  <string name="enable_reporting_title">אפשר דיווח</string>
+  <string name="preview_data_title">תצוגה מקדימה של נתונים</string>
+  <string name="preview_data_summary">%s</string>
+  <string name="view_stats_title">הצג סטטיסטיקה</string>
+  <string name="anonymous_learn_more">למידע נוסף</string>
+  <string name="last_report_on">דווח לאחרונה</string>
+  <string name="reporting_interval">מרווח בין דיווחים</string>
+  <plurals name="reporting_interval_days">
+    <item quantity="one">יום אחד</item>
+    <item quantity="two">יומיים</item>
+    <item quantity="many">%d ימים</item>
+    <item quantity="other">%d ימים</item>
+  </plurals>
+  <string name="next_report_on">דיווח הבא</string>
+  <string name="pref_uninstall">הסר</string>
+  <string name="btn_yes">כן</string>
+  <string name="btn_no">לא</string>
   <!-- Anonymous Statistics - Preview -->
+  <string name="preview_version_title">גירסא</string>
+  <string name="preview_country_title">מדינה</string>
+  <string name="preview_carrier_title">מפעיל</string>
+  <string name="preview_romname_title">שם ה-ROM</string>
+  <string name="preview_romversion_title">גרסת ה-ROM</string>
+  <string name="pref_info">אודות &amp; תמיכה</string>
+  <string name="pref_info_about">אודות</string>
+  <string name="pref_info_changelog">יומן השינויים</string>
+  <string name="pref_info_changelog_desc">הצג את יומן השינויים</string>
+  <string name="pref_info_website">Google+</string>
 </resources>
