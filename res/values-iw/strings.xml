@@ -19,9 +19,13 @@
   <!-- Main -->
   <string name="main_title">נתוני שימוש אנונימיים</string>
   <!-- Notification -->
+  <string name="notification_title">סטטיסטיקות של הרום</string>
   <string name="notification_desc">אפשר או השבת סטטיסטיקה אנונימית</string>
+  <string name="main_link">&lt;a href=&quot;http://www.cyanogenmod.org/blog/cmstats-what-it-is-and-why-you-should-opt-in&quot;&gt;למד עוד&lt;/a&gt;</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
+  <string name="anonymous_statistics_title">סטטיסטיקות של הרום</string>
+  <string name="anonymous_statistics_summary">עזור לשפר את CarbonROM על ידי שליחת דיווחי סטטיסטיקה אנונימית</string>
   <string name="anonymous_statistics_warning_title">אודות</string>
   <string name="pref_settings">הגדרות</string>
   <string name="enable_reporting_title">אפשר דיווח</string>

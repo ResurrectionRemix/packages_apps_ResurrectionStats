@@ -28,7 +28,7 @@
   <string name="anonymous_statistics_title">ROM 数据统计</string>
   <string name="anonymous_statistics_summary">启用匿名统计报告以便帮助 ROM 未来向更好的方向发展</string>
   <string name="anonymous_statistics_warning_title">关于</string>
-  <string name="anonymous_statistics_warning">启用 PAC-ROM 统计将允许非个人数据被提交给 PAC-ROM 的开发者以便记录各种设备上的唯一安装。提交的信息包含一个唯一的标识符，但不会涉及您的隐私与个人数据。该数据将在每次启动时被提交。\n\n如您想看一个作为被提交数据的实例，请点击预览数据。</string>
+  <string name="anonymous_statistics_warning">启用 ROM 统计将允许非个人数据被提交给此 ROM 的开发者以便记录各种设备上的唯一安装。提交的信息包含一个唯一的标识符，但不会涉及您的隐私与个人数据。该数据将在每次启动时被提交。\n\n如您想看一个作为被提交数据的实例，请点击预览数据。</string>
   <string name="pref_settings">设置</string>
   <string name="enable_reporting_title">启用报告</string>
   <string name="disable_reporting_persistent">永久退出</string>
