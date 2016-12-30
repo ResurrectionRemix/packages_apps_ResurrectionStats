@@ -17,6 +17,7 @@
 <resources>
   <string name="app_name">RR statistik</string>
   <!-- Main -->
+  <string name="main_title">Anonym användningsdata</string>
   <!-- Notification -->
   <string name="notification_title">ROM statistik</string>
   <!-- Anonymous Statistics #CM -->
