@@ -48,7 +48,7 @@
   <string name="next_report_on">Sonraki rapor</string>
   <string name="app_signature">Uygulama imzası</string>
   <string name="pref_hideicon">Başlatıcıda simgesini gizle</string>
-  <string name="pref_hideicon_desc">Senin uygulama çekmeceden uygulama başlatıcısı simgesi gizlenir</string>
+  <string name="pref_hideicon_desc">Uygulama başlatıcı simgesi uygulama çekmecesinde gizlenecek</string>
   <string name="pref_uninstall">Kaldır</string>
   <string name="btn_yes">Evet</string>
   <string name="btn_no">Hayır</string>
