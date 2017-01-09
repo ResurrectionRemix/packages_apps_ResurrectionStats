@@ -15,9 +15,49 @@
      limitations under the License.
 -->
 <resources>
+  <string name="app_name">Statistici RR</string>
   <!-- Main -->
+  <string name="main_title">Date de utilizare anonime</string>
   <!-- Notification -->
+  <string name="notification_ticker">Optat pentru statistici</string>
+  <string name="notification_title">Statistici ROM</string>
+  <string name="notification_desc">Activare sau dezactivare statistici anonime</string>
+  <string name="main_link">&lt;a href=&quot;http://www.cyanogenmod.org/blog/cmstats-what-it-is-and-why-you-should-opt-in&quot;&gt;aflați mai multe aici&lt;/a&gt;</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
+  <string name="anonymous_statistics_title">Statistici ROM</string>
+  <string name="anonymous_statistics_summary">Ajutați la îmbunătățirea acestui ROM prin transmiterea anonimă de statistici de utilizare</string>
+  <string name="anonymous_statistics_warning_title">Despre</string>
+  <string name="anonymous_statistics_warning">Alegând să trimiteți rapoarte de utilizare, se permite dezvoltatorilor  să primească date ne-personale pentru a urmări instalările unice la o gamă mare de dispozitive. Informația transmisă include un identificator unic, care nu vă compromite intimitatea sau datele personale. Datele sunt trimise la fiecare pornire a dispozitivului.\n\nPentru a vedea un exemplu de date ce se trimit, apăsați pe Previzualizare Date.</string>
+  <string name="pref_settings">Setări</string>
+  <string name="enable_reporting_title">Activare raportare</string>
+  <string name="disable_reporting_persistent">Renunţare repetată</string>
+  <string name="preview_data_title">Previzualizare date</string>
+  <string name="preview_data_summary">%s</string>
+  <string name="view_stats_title">Vizualizare stare</string>
+  <string name="anonymous_learn_more">Aflați mai multe</string>
+  <string name="pref_stats">Informații</string>
+  <string name="last_report_on">Ultima raportare</string>
+  <string name="reporting_interval">Interval de raportare</string>
+  <string name="next_report_on">Următoarea raportare</string>
+  <string name="app_signature">Semnătura aplicației</string>
+  <string name="pref_hideicon">Ascunde pictograma din launcher</string>
+  <string name="pref_hideicon_desc">Icoana de lansare a aplicației va fi ascunsă din sertarul de aplicații</string>
+  <string name="pref_uninstall">Dezinstalați</string>
+  <string name="btn_yes">Da</string>
+  <string name="btn_no">Nu</string>
   <!-- Anonymous Statistics - Preview -->
+  <string name="preview_id_title">ID unic</string>
+  <string name="preview_device_title">Dispozitiv</string>
+  <string name="preview_version_title">Versiune</string>
+  <string name="preview_country_title">Ţară</string>
+  <string name="preview_carrier_title">Operator</string>
+  <string name="preview_romname_title">Numele ROM-ului</string>
+  <string name="preview_romversion_title">Versiune ROM</string>
+  <string name="pref_info">Despre &amp; Suport</string>
+  <string name="pref_info_about">Despre</string>
+  <string name="pref_info_changelog">Jurnal modificări</string>
+  <string name="pref_info_changelog_desc">Arată Jurnalul de modificări</string>
+  <string name="pref_info_website">Google +</string>
+  <string name="pref_info_website_url">https://plus.google.com/u/0/communities/109352646351468373340</string>
 </resources>
