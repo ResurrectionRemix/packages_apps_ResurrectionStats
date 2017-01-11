@@ -15,7 +15,6 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_name">Statistik RR</string>
   <!-- Main -->
   <string name="main_title">Penggunaan data anonim</string>
   <!-- Notification -->

@@ -15,7 +15,6 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_name">Статистика ResurrectionRemix</string>
   <!-- Main -->
   <string name="main_title">Анонімне використання даних</string>
   <!-- Notification -->

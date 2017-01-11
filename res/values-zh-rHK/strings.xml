@@ -15,7 +15,6 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_name">RR 數據統計</string>
   <!-- Main -->
   <string name="main_title">匿名使用率數據</string>
   <!-- Notification -->

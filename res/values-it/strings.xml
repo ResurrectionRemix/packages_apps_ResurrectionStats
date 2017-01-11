@@ -15,7 +15,6 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_name">Statistiche RR</string>
   <!-- Main -->
   <string name="main_title">Utilizzo Dati Anonimo</string>
   <!-- Notification -->

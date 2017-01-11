@@ -15,7 +15,6 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_name">RR statistieken</string>
   <!-- Main -->
   <string name="main_title">Anonieme gebruiksgegevens</string>
   <!-- Notification -->

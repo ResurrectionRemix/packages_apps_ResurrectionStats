@@ -15,7 +15,6 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_name">RR आंकड़े</string>
   <!-- Main -->
   <string name="main_title">अनाम उपयोग डेटा</string>
   <!-- Notification -->

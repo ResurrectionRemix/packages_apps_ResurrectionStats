@@ -15,7 +15,6 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_name">حالة النظام</string>
   <!-- Main -->
   <string name="main_title">بيانات استخدام مجهولة</string>
   <!-- Notification -->

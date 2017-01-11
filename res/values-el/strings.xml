@@ -15,7 +15,6 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_name">Στατιστικά στοιχεία</string>
   <!-- Main -->
   <string name="main_title">Ανώνυμα δεδομένα χρήσης</string>
   <!-- Notification -->

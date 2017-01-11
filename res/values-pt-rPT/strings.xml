@@ -15,7 +15,6 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_name">Estatísticas da RR</string>
   <!-- Main -->
   <string name="main_title">Uso dados anónimos</string>
   <!-- Notification -->

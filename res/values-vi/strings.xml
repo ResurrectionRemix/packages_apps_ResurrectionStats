@@ -15,7 +15,6 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_name">Thống kê RR</string>
   <!-- Main -->
   <string name="main_title">Dữ Liệu Sử Dụng Ẩn Danh</string>
   <!-- Notification -->

@@ -15,7 +15,6 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_name">Statistika o RR-u</string>
   <!-- Main -->
   <string name="main_title">Anonimni podatci o korištenju</string>
   <!-- Notification -->

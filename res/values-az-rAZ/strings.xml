@@ -15,7 +15,6 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_name">RR Statistikaları</string>
   <!-- Main -->
   <string name="main_title">Anonim istifadə məlumatları</string>
   <!-- Notification -->

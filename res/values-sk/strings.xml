@@ -15,7 +15,6 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_name">RR štatistiky</string>
   <!-- Main -->
   <string name="main_title">Anonymné využitie dát</string>
   <!-- Notification -->
