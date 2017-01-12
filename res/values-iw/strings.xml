@@ -32,6 +32,7 @@
   <string name="preview_data_summary">%s</string>
   <string name="view_stats_title">הצג סטטיסטיקה</string>
   <string name="anonymous_learn_more">למידע נוסף</string>
+  <string name="pref_stats">מידע</string>
   <string name="last_report_on">דווח לאחרונה</string>
   <string name="reporting_interval">מרווח בין דיווחים</string>
   <plurals name="reporting_interval_days">
@@ -41,10 +42,15 @@
     <item quantity="other">%d ימים</item>
   </plurals>
   <string name="next_report_on">דיווח הבא</string>
+  <string name="app_signature">חתימת יישום</string>
+  <string name="pref_hideicon">הסר סמל מהמגש</string>
+  <string name="pref_hideicon_desc">סמל היישום יוסר מהמגש</string>
   <string name="pref_uninstall">הסר</string>
   <string name="btn_yes">כן</string>
   <string name="btn_no">לא</string>
   <!-- Anonymous Statistics - Preview -->
+  <string name="preview_id_title">מספר מזהה</string>
+  <string name="preview_device_title">התקן</string>
   <string name="preview_version_title">גירסא</string>
   <string name="preview_country_title">מדינה</string>
   <string name="preview_carrier_title">מפעיל</string>
