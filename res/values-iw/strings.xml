@@ -18,7 +18,7 @@
   <!-- Main -->
   <string name="main_title">נתוני שימוש אנונימיים</string>
   <!-- Notification -->
-  <string name="notification_title">סטטיסטיקות של הרום</string>
+  <string name="notification_title">סטטיסטיקת ה-ROM</string>
   <string name="notification_desc">אפשר או השבת סטטיסטיקה אנונימית</string>
   <string name="main_link">&lt;a href=&quot;http://www.cyanogenmod.org/blog/cmstats-what-it-is-and-why-you-should-opt-in&quot;&gt;למד עוד&lt;/a&gt;</string>
   <!-- Anonymous Statistics #CM -->

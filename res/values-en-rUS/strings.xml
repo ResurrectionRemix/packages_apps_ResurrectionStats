@@ -16,6 +16,7 @@
 -->
 <resources>
   <!-- Main -->
+  <string name="main_title">Anonymous Usage Data</string>
   <!-- Notification -->
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->

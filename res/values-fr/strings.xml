@@ -35,16 +35,14 @@
   <string name="disable_reporting_persistent">Refus permanent de participation</string>
   <string name="preview_data_title">Prévisualiser les données</string>
   <string name="preview_data_summary">%s</string>
-  <string name="view_stats_title">Voir statistiques</string>
+  <string name="view_stats_title">Afficher les statistiques</string>
   <string name="anonymous_learn_more">En savoir plus</string>
   <string name="pref_stats">Information</string>
   <string name="last_report_on">Dernier rapport</string>
   <string name="reporting_interval">Fréquence du rapport</string>
   <plurals name="reporting_interval_days">
-    <item quantity="one">1 jour
-
-%d days</item>
-    <item quantity="other">%d days</item>
+    <item quantity="one">1 jour</item>
+    <item quantity="other">%d jours</item>
   </plurals>
   <string name="next_report_on">Prochain rapport</string>
   <string name="app_signature">Signature de l\'application</string>
