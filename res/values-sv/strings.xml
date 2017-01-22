@@ -19,23 +19,34 @@
   <string name="main_title">Anonym användningsdata</string>
   <!-- Notification -->
   <string name="notification_title">ROM statistik</string>
+  <string name="notification_desc">Aktivera eller Inaktivera Anonym Statistik</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
   <string name="anonymous_statistics_title">ROM statistik</string>
+  <string name="anonymous_statistics_summary">Bidra till att göra denna ROM bättre genom att skicka in anonym statistikrapportering</string>
   <string name="anonymous_statistics_warning_title">Om</string>
   <string name="pref_settings">Inställningar</string>
+  <string name="enable_reporting_title">Aktivera rapportering</string>
   <string name="preview_data_title">Förhandsgranska data</string>
+  <string name="preview_data_summary"> %s</string>
   <string name="view_stats_title">Visa statistik</string>
   <string name="anonymous_learn_more">Läs mer</string>
   <string name="pref_stats">Information</string>
+  <string name="last_report_on">Senast rapporterat</string>
+  <string name="reporting_interval">Rapporterings intervall</string>
   <plurals name="reporting_interval_days">
     <item quantity="one">1 dag</item>
     <item quantity="other">%d dagar</item>
   </plurals>
+  <string name="next_report_on">Nästa rapport</string>
+  <string name="app_signature">Appsignatur</string>
+  <string name="pref_hideicon">Dölj ikonen från launcher</string>
+  <string name="pref_hideicon_desc">Launcher ikon kommer att döljas från din applåda</string>
   <string name="pref_uninstall">Avinstallera</string>
   <string name="btn_yes">Ja</string>
   <string name="btn_no">Nej</string>
   <!-- Anonymous Statistics - Preview -->
+  <string name="preview_id_title">Unikt ID</string>
   <string name="preview_device_title">Enhet</string>
   <string name="preview_version_title">Version</string>
   <string name="preview_country_title">Land</string>
