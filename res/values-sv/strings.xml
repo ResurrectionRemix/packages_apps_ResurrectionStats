@@ -20,11 +20,13 @@
   <!-- Notification -->
   <string name="notification_title">ROM statistik</string>
   <string name="notification_desc">Aktivera eller Inaktivera Anonym Statistik</string>
+  <string name="main_link">&lt;a href=&quot;http://www.cyanogenmod.org/blog/cmstats-what-it-is-and-why-you-should-opt-in&quot;&gt;Läs mer&lt;/a&gt;</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
   <string name="anonymous_statistics_title">ROM statistik</string>
   <string name="anonymous_statistics_summary">Bidra till att göra denna ROM bättre genom att skicka in anonym statistikrapportering</string>
   <string name="anonymous_statistics_warning_title">Om</string>
+  <string name="anonymous_statistics_warning">Att delta i ROM statistik kommer att tillåta överföring av opersonliga data till ROM utvecklare för att kunna spåra unika installationer enheter emellan. Den inlämnade informationen inkluderar ett unikt ID som inte äventyrar din integritet eller personliga data. Data skickas in vid varje uppstart. \n\nFör att se ett exempel på inskickad data, tryck på Förhandsgranska data.</string>
   <string name="pref_settings">Inställningar</string>
   <string name="enable_reporting_title">Aktivera rapportering</string>
   <string name="preview_data_title">Förhandsgranska data</string>
