@@ -35,7 +35,7 @@
   <string name="preview_data_summary">%s</string>
   <string name="view_stats_title">Посмотреть статистику</string>
   <string name="anonymous_learn_more">Узнать больше</string>
-  <string name="pref_stats">Инофрмация</string>
+  <string name="pref_stats">Информация</string>
   <string name="last_report_on">Последний отчет</string>
   <string name="reporting_interval">Интервал отсылки отчетов</string>
   <plurals name="reporting_interval_days">
