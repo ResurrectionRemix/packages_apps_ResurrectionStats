@@ -26,7 +26,7 @@
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
   <string name="anonymous_statistics_title">Statystyki ROM\'u</string>
   <string name="anonymous_statistics_summary">Pomóż ulepszyć ten ROM, wyrażając zgodę na wysyłanie anonimowych statystyk</string>
-  <string name="anonymous_statistics_warning_title">O ROM\'ie</string>
+  <string name="anonymous_statistics_warning_title">O RR-OS</string>
   <string name="anonymous_statistics_warning">Udział w statystykach zezwoli na przesyłanie anonimowych danych twórcom ROMu w celu badania liczby aktywnych urządzeń. Przesłane informacje zawierają unikatowy ID, który nie zagraża Twojej prywatności, ani danym osobowym. Dane są wysyłane podczas uruchamiania urządzenia.\n\nAby zobaczyć przykładowe wysyłane informacje, wybierz Podgląd danych.</string>
   <string name="pref_settings">Ustawienia</string>
   <string name="enable_reporting_title">Włącz raportowanie</string>
@@ -57,9 +57,9 @@
   <string name="preview_country_title">Kraj</string>
   <string name="preview_carrier_title">Operator</string>
   <string name="preview_romname_title">Nazwa ROM\'u</string>
-  <string name="preview_romversion_title">Wersja ROM\'u</string>
+  <string name="preview_romversion_title">Wersja RR-OS</string>
   <string name="pref_info">O ROM\'ie &amp; Wsparcie</string>
-  <string name="pref_info_about">O ROM\'ie</string>
+  <string name="pref_info_about">O RR-OS</string>
   <string name="pref_info_changelog">Dziennik zmian</string>
   <string name="pref_info_changelog_desc">Pokaż dziennik zmian</string>
   <string name="pref_info_website">Google+</string>
