@@ -20,5 +20,11 @@
   <!-- Notification -->
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
+  <string name="anonymous_statistics_title">ROM Statistics</string>
+  <string name="anonymous_statistics_summary">Help make this ROM better by opting into anonymous statistics reporting</string>
+  <string name="anonymous_statistics_warning_title">About</string>
+  <string name="anonymous_statistics_warning">Opting into ROM Statistics will allow non-personal data to be submitted to the
+        developers of the ROM to track unique installations across devices. The information submitted includes an unique identifier,
+        which does not compromise your privacy or personal data. The data is submitted on a regular interval decided by the ROM developer.\n\nFor an example of the data that is submitted, tap on Preview Data.</string>
   <!-- Anonymous Statistics - Preview -->
 </resources>

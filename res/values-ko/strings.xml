@@ -44,7 +44,7 @@
   <string name="next_report_on">다음 보고</string>
   <string name="app_signature">앱 서명</string>
   <string name="pref_hideicon">런처에서 아이콘 숨기기</string>
-  <string name="pref_hideicon_desc">애플리케이션 런처 아이콘이 앱 서랍에서 숨겨집니다.</string>
+  <string name="pref_hideicon_desc">애플리케이션 실행 아이콘이 앱 서랍에서 숨겨집니다.</string>
   <string name="pref_uninstall">제거</string>
   <string name="btn_yes">예</string>
   <string name="btn_no">아니오</string>
