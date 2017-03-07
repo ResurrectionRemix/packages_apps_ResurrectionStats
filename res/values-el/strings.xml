@@ -26,7 +26,7 @@
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
   <string name="anonymous_statistics_title">Στατιστικά στοιχεία</string>
   <string name="anonymous_statistics_summary">Βοηθήστε να γίνει το λογισμικό καλύτερο, επιλέγοντας να στέλνετε ανώνυμες στατιστικές αναφορές</string>
-  <string name="anonymous_statistics_warning_title">Σχετικά</string>
+  <string name="anonymous_statistics_warning_title">Σχετικά με</string>
   <string name="anonymous_statistics_warning">Ενεργοποιώντας τη συλλογή στατιστικών στοιχείων επιτρέπετε την αποστολή
         μη προσωπικών δεδομένων στους προγραμματιστές του λογισμικού για παρακολούθηση του αριθμού μοναδικών εγκαταστάσεων
         σε όλες τις συσκευές. Οι πληροφορίες που αποστέλλονται συμπεριλαμβάνουν ένα μοναδικό αναγνωριστικό, το οποίο δεν θέτει
