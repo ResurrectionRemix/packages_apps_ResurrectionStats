@@ -16,11 +16,11 @@
 -->
 <resources>
   <!-- Main -->
-  <string name="main_title">Penggunaan data anonim</string>
+  <string name="main_title">Penggunaan Data Anonim</string>
   <!-- Notification -->
   <string name="notification_ticker">Statistik yang terpilih</string>
   <string name="notification_title">Statistik ROM</string>
-  <string name="notification_desc">Aktifkan atau nonaktifkan statistik anonim</string>
+  <string name="notification_desc">Aktifkan atau nonaktifkan Statistik Anonim</string>
   <string name="main_link">&lt;a href=&quot;http://www.cyanogenmod.org/blog/cmstats-what-it-is-and-why-you-should-opt-in&quot;&gt;Learn More&lt;/a&gt;</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
@@ -37,7 +37,7 @@
   <string name="anonymous_learn_more">Pelajari selengkapnya</string>
   <string name="pref_stats">Informasi</string>
   <string name="last_report_on">Terakhir dilaporkan</string>
-  <string name="reporting_interval">Interval pelaporan</string>
+  <string name="reporting_interval">Interval Pelaporan</string>
   <plurals name="reporting_interval_days">
     <item quantity="other">%d hari</item>
   </plurals>

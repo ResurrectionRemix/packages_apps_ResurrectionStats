@@ -28,7 +28,7 @@
   <string name="anonymous_statistics_summary">ساهم في جعل هذه الروم أفضل عبر إرسال تبليغات الإحصائيات بدون إرسال معلوماتك الشخصية</string>
   <string name="anonymous_statistics_warning_title">حول</string>
   <string name="pref_settings">الإعدادات</string>
-  <string name="enable_reporting_title">تفعيل إرسال التقارير</string>
+  <string name="enable_reporting_title">تفعيل التقارير</string>
   <string name="disable_reporting_persistent">استمرار استبعاد</string>
   <string name="preview_data_title">معاينة البيانات</string>
   <string name="preview_data_summary">%s</string>
@@ -37,8 +37,10 @@
   <string name="pref_stats">معلومات</string>
   <string name="last_report_on">اخر التقارير</string>
   <string name="reporting_interval">الفاصل الزمني للتقرير</string>
-  <string name="next_report_on">التقرير القادم</string>
+  <string name="next_report_on">التقرير التالي</string>
   <string name="app_signature">توقيع التطبيق</string>
+  <string name="pref_hideicon">إخفاء أيقونة من اللانشر</string>
+  <string name="pref_hideicon_desc">سيتم إخفاء أيقونة التطبيق من درج التطبيقات الخاص بك</string>
   <string name="pref_uninstall">إلغاء التثبيت</string>
   <string name="btn_yes">نعم</string>
   <string name="btn_no">لا</string>
