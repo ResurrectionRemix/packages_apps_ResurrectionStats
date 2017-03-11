@@ -25,7 +25,7 @@
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
   <string name="anonymous_statistics_title">ROM statistieken</string>
-  <string name="anonymous_statistics_summary">Help deze ROM beter te maken door in te stemmen met het verzenden anonieme statistieken</string>
+  <string name="anonymous_statistics_summary">Help deze ROM beter te maken door in te stemmen met het verzenden van anonieme statistieken</string>
   <string name="anonymous_statistics_warning_title">Over</string>
   <string name="anonymous_statistics_warning">Door het verzenden van statistieken toe te staan worden tijdens het opstarten anonieme gegevens naar de ontwikkelaars van Resurrection verzonden om unieke installaties te kunnen volgen. In de gegevens zit een uniek id-nummer verwerkt, die uw privacy niet schendt.\n\nOm een voorbeeld te zien, tikt u op \'Voorbeeld van gegevens\'.</string>
   <string name="pref_settings">Instellingen</string>
@@ -42,11 +42,11 @@
     <item quantity="one">1 dag</item>
     <item quantity="other">%d dagen</item>
   </plurals>
-  <string name="next_report_on">Volgend verslag</string>
+  <string name="next_report_on">Volgend rapport</string>
   <string name="app_signature">App handtekening</string>
-  <string name="pref_hideicon">Verberg icoon van de launcher</string>
-  <string name="pref_hideicon_desc">Applicatie launcher icoon wordt verborgen in uw App Drawer</string>
-  <string name="pref_uninstall">Deïnstalleren</string>
+  <string name="pref_hideicon">Verberg icoon in de launcher</string>
+  <string name="pref_hideicon_desc">Applicatie launcher icoon wordt verborgen in uw navigatiemenu</string>
+  <string name="pref_uninstall">Verwijderen</string>
   <string name="btn_yes">Ja</string>
   <string name="btn_no">Nee</string>
   <!-- Anonymous Statistics - Preview -->
@@ -55,8 +55,8 @@
   <string name="preview_version_title">Versie</string>
   <string name="preview_country_title">Land</string>
   <string name="preview_carrier_title">Provider</string>
-  <string name="preview_romname_title">ROM Naam</string>
-  <string name="preview_romversion_title">ROM versie</string>
+  <string name="preview_romname_title">ROM-naam</string>
+  <string name="preview_romversion_title">ROM-versie</string>
   <string name="pref_info">Over &amp; Ondersteuning</string>
   <string name="pref_info_about">Over</string>
   <string name="pref_info_changelog">Wijzigingen</string>
