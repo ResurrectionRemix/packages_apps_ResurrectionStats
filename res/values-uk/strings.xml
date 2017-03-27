@@ -27,7 +27,7 @@
   <string name="anonymous_statistics_title">Статистика прошивки</string>
   <string name="anonymous_statistics_summary">Допоможіть зробити цю прошивку кращою, відправляючи анонімну статистику</string>
   <string name="anonymous_statistics_warning_title">Про додаток</string>
-  <string name="anonymous_statistics_warning">Вибір на користь програми \"ROM Statistics\" робить можливим отримання конфіденційної інформації розробниками для відстеження кількості установок серед пристроїв. Інформація, яка надсилається містить унікальний ідентифікатор, який не розкриває ваші конфіденційні або особисті дані. Інформація відправляється регулярно, з інтервалом, встановленим розробниками прошивки. Для перегляду прикладу надісланих даних, натисніть \"Попередній перегляд даних\".</string>
+  <string name="anonymous_statistics_warning">Вибір на користь програми \"ROM Statistics\" робить можливим отримання неперсоналізованої інформації розробниками для відстеження кількості установок серед пристроїв. Інформація, яка надсилається містить унікальний ідентифікатор, який не розкриває ваші конфіденційні або особисті дані. Інформація відправляється регулярно, з інтервалом, встановленим розробниками прошивки. Для перегляду прикладу надісланих даних, натисніть \"Попередній перегляд даних\".</string>
   <string name="pref_settings">Налаштування</string>
   <string name="enable_reporting_title">Увімкнути надсилання звітів</string>
   <string name="disable_reporting_persistent">Постійна відмова від участі</string>
@@ -58,7 +58,7 @@
   <string name="preview_carrier_title">Оператор</string>
   <string name="preview_romname_title">Назва прошивки</string>
   <string name="preview_romversion_title">Версія прошивки</string>
-  <string name="pref_info">Про &amp; підтримка</string>
+  <string name="pref_info">Про &amp; Підтримка</string>
   <string name="pref_info_about">Про додаток</string>
   <string name="pref_info_changelog">Список змін</string>
   <string name="pref_info_changelog_desc">Показати список змін</string>
