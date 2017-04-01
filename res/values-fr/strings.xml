@@ -25,11 +25,11 @@
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
   <string name="anonymous_statistics_title">Statistiques relatives à la ROM</string>
-  <string name="anonymous_statistics_summary">Contribuez à rendre cette ROM meilleure en envoyant des rapports de statistiques anonymes</string>
+  <string name="anonymous_statistics_summary">Contribuer à l\'amélioration de la rom en envoyant des rapports de statistiques anonymes</string>
   <string name="anonymous_statistics_warning_title">À propos</string>
   <string name="anonymous_statistics_warning">Participer aux statistiques de la ROM permettra l\'envoi de données anonymes
-        aux développeurs afin qu\'ils sachent le nombre d\'installations uniques par appareil. L\'information fournie inclut un identifiant unique,
-        qui ne compromet pas votre vie privée ou vos données personnelles. Les données sont envoyées au cours de chaque démarrage.\n\nPour découvrir un exemple de données envoyées, appuyer sur Aperçu des données.</string>
+        aux développeurs afin de comptabiliser le nombre d\'installation par appareil. L\'information fournie inclut un ID unique,
+        qui ne compromet pas votre vie privée ou vos données personnelles. Les données sont transmises à intervalle régulier défini par le développeur.\n\nPour voir un exemple de données transmises, appuyez sur Aperçu des données.</string>
   <string name="pref_settings">Paramètres</string>
   <string name="enable_reporting_title">Activer les rapports</string>
   <string name="disable_reporting_persistent">Refus permanent de participation</string>
