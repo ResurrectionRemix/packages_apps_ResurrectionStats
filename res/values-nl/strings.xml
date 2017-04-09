@@ -27,7 +27,7 @@
   <string name="anonymous_statistics_title">ROM statistieken</string>
   <string name="anonymous_statistics_summary">Help deze ROM beter te maken door in te stemmen met het verzenden van anonieme statistieken</string>
   <string name="anonymous_statistics_warning_title">Over</string>
-  <string name="anonymous_statistics_warning">Door het verzenden van statistieken toe te staan worden tijdens het opstarten anonieme gegevens naar de ontwikkelaars van Resurrection verzonden om unieke installaties te kunnen volgen. In de gegevens zit een uniek id-nummer verwerkt, die uw privacy niet schendt.\n\nOm een voorbeeld te zien, tikt u op \'Voorbeeld van gegevens\'.</string>
+  <string name="anonymous_statistics_warning">Door het verzenden van statistieken toe te staan worden tijdens het opstarten anonieme gegevens naar de ontwikkelaars van Resurrection verzonden om unieke installaties te kunnen volgen. In de gegevens zit een uniek id-nummer verwerkt, die je privacy niet schendt.\n\nOm een voorbeeld te zien, tik op \'Voorbeeld van gegevens\'.</string>
   <string name="pref_settings">Instellingen</string>
   <string name="enable_reporting_title">Schakel rapporteren in</string>
   <string name="disable_reporting_persistent">Permanente opt-out</string>
