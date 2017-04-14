@@ -15,7 +15,7 @@ public class Const {
 	public static final int ROMSTATS_REPORTING_MODE_OLD = 1; // old CM10  : user prompt, default FALSE, first time immediately
 
 	public static final String STATS_URL = "http://resurrectionremix.sourceforge.net";
-	public static final String RR_VERSION = "5.8.2";
+	public static final String RR_VERSION = "5.8.3";
 	public static final String ROMNAME = "ResurrectionRemix";
 	public static final int TIMEFRAME = 1;
 }
