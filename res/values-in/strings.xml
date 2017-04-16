@@ -16,18 +16,20 @@
 -->
 <resources>
   <!-- Main -->
-  <string name="main_title">Penggunaan Data Anonim</string>
+  <string name="main_title">Pemakaian Data Anonim</string>
   <!-- Notification -->
   <string name="notification_ticker">Statistik yang terpilih</string>
   <string name="notification_title">Statistik ROM</string>
-  <string name="notification_desc">Aktifkan atau nonaktifkan Statistik Anonim</string>
-  <string name="main_link">&lt;a href=&quot;http://www.cyanogenmod.org/blog/cmstats-what-it-is-and-why-you-should-opt-in&quot;&gt;Learn More&lt;/a&gt;</string>
+  <string name="notification_desc">Aktifkan atau Nonaktifkan Statistik Anonim</string>
+  <string name="main_link">&lt;a href=&quot;http://www.cyanogenmod.org/blog/cmstats-what-it-is-and-why-you-should-opt-in&quot;&gt;Pelajari Lebih Lanjut&lt;/a&gt;</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
   <string name="anonymous_statistics_title">Statistik ROM</string>
-  <string name="anonymous_statistics_summary">Bantu ROM ini menjadi lebih baik dengan mengikuti pelaporan statistik anonim</string>
+  <string name="anonymous_statistics_summary">Bantu ROM ini menjadi lebih baik dengan memilih opsi pelaporan statistik anonim</string>
   <string name="anonymous_statistics_warning_title">Tentang</string>
-  <string name="anonymous_statistics_warning">Ikut ambil bagian dalam Statistik ROM memungkinkan data non-pribadi akan dikirimkan kepada para pengembang ROM untuk melacak instalasi data unik di perangkat. Informasi yang dikirimkan berisi pengenal unik, yang tidak membahayakan privasi atau data pribadi anda. Data akan dikirim secara periodik.\n\nUntuk melihat contoh data yang akan dikirim, ketuk pada Pratinjau Data.</string>
+  <string name="anonymous_statistics_warning">Ikut ambil bagian dalam Statistik ROM memungkinkan data non-pribadi akan dikirimkan kepada 
+        para pengembang ROM untuk melacak instalasi data unik di perangkat. Informasi yang dikirimkan berisi pengenal unik, 
+        yang tidak membahayakan privasi atau data pribadi anda. Data akan dikirim secara periodik diputuskan oleh pengembang ROM.\n\nUntuk melihat contoh data yang akan dikirim, ketuk pada Pratinjau Data.</string>
   <string name="pref_settings">Pengaturan</string>
   <string name="enable_reporting_title">Aktifkan pelaporan</string>
   <string name="disable_reporting_persistent">Persisten opt-out</string>
