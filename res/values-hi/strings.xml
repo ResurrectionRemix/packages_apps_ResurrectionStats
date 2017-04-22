@@ -19,12 +19,12 @@
   <string name="main_title">अनाम उपयोग डेटा</string>
   <!-- Notification -->
   <string name="notification_ticker">Statistics Opted-In</string>
-  <string name="notification_title">ROM ईस्तेमाल के आंकडे</string>
-  <string name="notification_desc">ROM ईस्तेमाल की गैर वैयक्तिक जाणकारी भेंजे या ना भेंजे</string>
+  <string name="notification_title">रोम आंकड़े</string>
+  <string name="notification_desc">ईस्तेमाल की गैर वैयक्तिक जाणकारी भेंजे या ना भेंजे</string>
   <string name="main_link">&lt;a href=&quot;http://www.cyanogenmod.org/blog/cmstats-what-it-is-and-why-you-should-opt-in&quot;&gt;Learn More&lt;/a&gt;</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-  <string name="anonymous_statistics_title">ROM Statistics</string>
+  <string name="anonymous_statistics_title">रोम आंकड़े</string>
   <string name="anonymous_statistics_summary">इस ROM को अनाम आंकड़ों की रिपोर्ट करने का फैसला करके बेहतर बनाने में मदद करें</string>
   <string name="anonymous_statistics_warning_title">विवरण</string>
   <string name="pref_settings">सेटिंग्स</string>
