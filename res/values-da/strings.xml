@@ -18,6 +18,7 @@
   <!-- Main -->
   <string name="main_title">Anonym Anvendelsesdata</string>
   <!-- Notification -->
+  <string name="notification_ticker">Statistik tilvalgt</string>
   <string name="notification_title">ROM Statistikker</string>
   <string name="notification_desc">Aktivér eller deaktivér anonyme statistikker</string>
   <string name="main_link">&lt;a href=&quot;http://www.cyanogenmod.org/blog/cmstats-what-it-is-and-why-you-should-opt-in&quot;&gt;Få mere at vide&lt;/a&gt;</string>
