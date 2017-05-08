@@ -27,6 +27,7 @@
   <string name="anonymous_statistics_title">احصائيات الروم</string>
   <string name="anonymous_statistics_summary">ساهم في جعل هذه الروم أفضل عبر إرسال تبليغات الإحصائيات بدون إرسال معلوماتك الشخصية</string>
   <string name="anonymous_statistics_warning_title">حول</string>
+  <string name="anonymous_statistics_warning">الولوج في إحصاءات الروم سيسمح بتقديم بيانات غير شخصية         لمطوري الروم لتعقب تثبيت النظام عبر الأجهزة المختلغة. المعلومات المقدمة تشمل معرّف فريد،         والذي لا يقايض خصوصيتك أو بياناتك الشخصية. البيانات تقدم بشكل دوري بحسب ما يقرر مطور الروم.\n\nكمثال على البيانات المقدمة، إضغط على عرض البيانات.</string>
   <string name="pref_settings">الإعدادات</string>
   <string name="enable_reporting_title">تفعيل التقارير</string>
   <string name="disable_reporting_persistent">استمرار استبعاد</string>
@@ -37,6 +38,14 @@
   <string name="pref_stats">معلومات</string>
   <string name="last_report_on">اخر التقارير</string>
   <string name="reporting_interval">الفاصل الزمني للتقرير</string>
+  <plurals name="reporting_interval_days">
+    <item quantity="zero">%d يوم</item>
+    <item quantity="one">%d يوم</item>
+    <item quantity="two">يومان</item>
+    <item quantity="few">أيام قليلة</item>
+    <item quantity="many">عدة أيام</item>
+    <item quantity="other">%d أيام</item>
+  </plurals>
   <string name="next_report_on">التقرير التالي</string>
   <string name="app_signature">توقيع التطبيق</string>
   <string name="pref_hideicon">إخفاء أيقونة من اللانشر</string>
