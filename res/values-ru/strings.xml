@@ -58,7 +58,7 @@
   <string name="preview_carrier_title">Оператор</string>
   <string name="preview_romname_title">Название прошивки</string>
   <string name="preview_romversion_title">Версия прошивки</string>
-  <string name="pref_info">О &amp; Поддержка</string>
+  <string name="pref_info">Справка и поддержка</string>
   <string name="pref_info_about">О статистике</string>
   <string name="pref_info_changelog">Список изменений</string>
   <string name="pref_info_changelog_desc">Показать список изменений</string>
