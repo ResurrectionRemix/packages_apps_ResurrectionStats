@@ -45,7 +45,7 @@
   <string name="next_report_on">Próximo relatório</string>
   <string name="app_signature">Assinatura da aplicação</string>
   <string name="pref_hideicon">Ocultar ícone no lançador</string>
-  <string name="pref_hideicon_desc">O ícone da aplicação será escondido da sua gaveta de aplicações</string>
+  <string name="pref_hideicon_desc">O ícone da aplicação será escondido do seu painel de aplicações</string>
   <string name="pref_uninstall">Desinstalar</string>
   <string name="btn_yes">Sim</string>
   <string name="btn_no">Não</string>
