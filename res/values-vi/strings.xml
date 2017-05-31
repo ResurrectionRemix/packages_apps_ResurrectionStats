@@ -20,7 +20,7 @@
   <!-- Notification -->
   <string name="notification_ticker">Thống kê tham gia</string>
   <string name="notification_title">Thống kê ROM</string>
-  <string name="notification_desc">Bật hoặc tắt số liệu thống kê ẩn danh</string>
+  <string name="notification_desc">Bật hoặc Tắt số liệu thống kê ẩn danh</string>
   <string name="main_link">&lt;a href=&quot;http://www.cyanogenmod.org/blog/cmstats-what-it-is-and-why-you-should-opt-in&quot;&gt;Tìm hiểu thêm&lt;/a&gt;</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
