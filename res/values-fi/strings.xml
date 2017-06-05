@@ -16,8 +16,14 @@
 -->
 <resources>
   <!-- Main -->
+  <string name="main_title">Nimetön käyttödata</string>
   <!-- Notification -->
+  <string name="notification_ticker">Tilastotiedot käytössä</string>
+  <string name="notification_title">Järjestelmän tilastot</string>
+  <string name="notification_desc">Ota tai poista käytöstä nimettömät tilastotiedot</string>
+  <string name="main_link">&lt;a href=&quot;http://www.cyanogenmod.org/blog/cmstats-what-it-is-and-why-you-should-opt-in&quot;&gt;Learn More&lt;/a&gt;</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
+  <string name="anonymous_statistics_title">Järjestelmätilastot</string>
   <!-- Anonymous Statistics - Preview -->
 </resources>
