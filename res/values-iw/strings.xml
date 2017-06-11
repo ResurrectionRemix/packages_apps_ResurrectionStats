@@ -26,6 +26,7 @@
   <string name="anonymous_statistics_title">סטטיסטיקות של הרום</string>
   <string name="anonymous_statistics_summary">עזור לשפר את CarbonROM על ידי שליחת דיווחי סטטיסטיקה אנונימית</string>
   <string name="anonymous_statistics_warning_title">אודות</string>
+  <string name="anonymous_statistics_warning">הצטרפות לסטטיסטיקת המערכת יאפשר שליחת מידע לא פרטי למפתחי המערכת על מנת לאתר התקנות שונות בין מכשירים. המידע הנשלח כולל מזהה ייחודי, אשר אינו פוגע בפרטיות שלך או במידע שלך. המידע נשלח שבועית תוך כדי איתחול.\n\nכדי לצפות בדוגמה של המידע הנשלח, לחץ על תצוגה מקדימה של נתונים.</string>
   <string name="pref_settings">הגדרות</string>
   <string name="enable_reporting_title">אפשר דיווח</string>
   <string name="preview_data_title">תצוגה מקדימה של נתונים</string>
