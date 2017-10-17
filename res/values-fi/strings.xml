@@ -19,11 +19,43 @@
   <string name="main_title">Nimetön käyttödata</string>
   <!-- Notification -->
   <string name="notification_ticker">Tilastotiedot käytössä</string>
-  <string name="notification_title">Järjestelmän tilastot</string>
-  <string name="notification_desc">Ota tai poista käytöstä nimettömät tilastotiedot</string>
+  <string name="notification_title">ROM:n tilastot</string>
+  <string name="notification_desc">Ota käyttöön tai poista käytöstä nimettömät tilastotiedot</string>
   <string name="main_link">&lt;a href=&quot;http://www.cyanogenmod.org/blog/cmstats-what-it-is-and-why-you-should-opt-in&quot;&gt;Learn More&lt;/a&gt;</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-  <string name="anonymous_statistics_title">Järjestelmätilastot</string>
+  <string name="anonymous_statistics_title">ROM:n tilastot</string>
+  <string name="anonymous_statistics_summary">Auta ROM:n kehittämisessä osallistumalla tilastojen raportointiin anonyymisti</string>
+  <string name="anonymous_statistics_warning_title">Tietoja</string>
+  <string name="anonymous_statistics_warning">Osallistumalla ROM-statistiikan keräämiseen annat luvan anonyymin datan lähettämiseen          ROM:n kehittäjille, jotta he voivat seurata ainutlaatuisia asennuksia laitteissa. Lähetetyt tiedot sisältävät uniikin tunnisteen,          joka ei vaaranna yksityisyyttäsi tai henkilökohtaisia tietojasi. Tietoja lähetetään säännöllisesti ROM:n kehittäjän määrittämän aikavälin mukaan.\n\nNähdäksesi esimerkin datasta, jota lähetetään, valitse Datan Esikatselu.</string>
+  <string name="pref_settings">Asetukset</string>
+  <string name="enable_reporting_title">Ota raportointi käyttöön</string>
+  <string name="disable_reporting_persistent">Tilastotietojen raportointi pois päältä pysyvästi</string>
+  <string name="preview_data_title">Esikatsele dataa</string>
+  <string name="preview_data_summary">%s</string>
+  <string name="view_stats_title">Näytä tilastot</string>
+  <string name="anonymous_learn_more">Lisätietoja</string>
+  <string name="pref_stats">Tiedot</string>
+  <string name="last_report_on">Viimeksi raportoitu</string>
+  <string name="reporting_interval">Raportointiväli</string>
+  <string name="next_report_on">Seuraava raportti</string>
+  <string name="app_signature">Sovelluksen allekirjoitus</string>
+  <string name="pref_hideicon">Piilota kuvake launcherista</string>
+  <string name="pref_hideicon_desc">Sovelluksen kuvake piilotetaan sovelluslistasta</string>
+  <string name="pref_uninstall">Poista</string>
+  <string name="btn_yes">Kyllä</string>
+  <string name="btn_no">Ei</string>
   <!-- Anonymous Statistics - Preview -->
+  <string name="preview_id_title">Yksilöllinen ID</string>
+  <string name="preview_device_title">Laite</string>
+  <string name="preview_version_title">Versio</string>
+  <string name="preview_country_title">Maa</string>
+  <string name="preview_carrier_title">Operaattori</string>
+  <string name="preview_romname_title">ROM:n nimi</string>
+  <string name="preview_romversion_title">ROM:n versio</string>
+  <string name="pref_info_about">Tietoja</string>
+  <string name="pref_info_changelog">Muutosloki</string>
+  <string name="pref_info_changelog_desc">Näytä muutosloki</string>
+  <string name="pref_info_website">Google+</string>
+  <string name="pref_info_website_url">https://plus.google.com/u/0/communities/109352646351468373340</string>
 </resources>

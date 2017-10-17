@@ -38,6 +38,11 @@
   <string name="pref_stats">Informații</string>
   <string name="last_report_on">Ultima raportare</string>
   <string name="reporting_interval">Interval de raportare</string>
+  <plurals name="reporting_interval_days">
+    <item quantity="one">1 zi</item>
+    <item quantity="few">Câteva zile</item>
+    <item quantity="other">%d zile</item>
+  </plurals>
   <string name="next_report_on">Următoarea raportare</string>
   <string name="app_signature">Semnătura aplicației</string>
   <string name="pref_hideicon">Ascunde pictograma din launcher</string>
