@@ -11,3 +11,4 @@ gradlew*
 \.DS_Store
 captures/
 *.jks
+/system_libs/
