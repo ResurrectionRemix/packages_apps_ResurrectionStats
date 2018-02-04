@@ -60,7 +60,7 @@ public class ReportingServiceManager extends BroadcastReceiver {
 		// get ANONYMOUS_OPT_IN pref, defaults to true (new behavior)
 		boolean optedIn = prefs.getBoolean(Const.ANONYMOUS_OPT_IN, true);
 
-		// If we want the old behavior, re-read OPT_IN but default to false 
+		// If we want the old behavior, re-read OPT_IN but default to false
 		if (Utilities.getReportingMode() == Const.ROMSTATS_REPORTING_MODE_OLD) {
 			optedIn = prefs.getBoolean(Const.ANONYMOUS_OPT_IN, false);
 			Log.d(Const.TAG, "[setAlarm] AskFirstBoot, optIn=" + optedIn);

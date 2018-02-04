@@ -102,7 +102,7 @@ public class Utilities {
 	}
 
 	public static String getDevice() {
-		return SystemProperties.get("ro.product.model");
+		return SystemProperties.get("ro.rr.device");
 	}
 
 	public static String getModVersion() {
@@ -135,7 +135,7 @@ public class Utilities {
 		}
 	}
 
-	
+
 	/**
 	 * Gets the Ask First value
 	 * 0: RomStats will behave like CMStats, starts reporting automatically after the tframe (default)
