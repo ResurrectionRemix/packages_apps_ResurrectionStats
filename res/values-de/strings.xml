@@ -27,7 +27,9 @@
   <string name="anonymous_statistics_title">ROM-Statistiken</string>
   <string name="anonymous_statistics_summary">Helfe diese ROM besser zu machen, indem du die anonymen Statistiken aktivierst</string>
   <string name="anonymous_statistics_warning_title">Über</string>
-  <string name="anonymous_statistics_warning">Durch die Aktivierung der ROM Statistiken werden unpersönliche Daten zu den        Entwicklern dieser ROM geschickt, um die Zahl der Installationen auf Geräten zu zählen. Diese Informationen beinhalten unter anderem ein einzigartiges Identifizierungszeichen,        welches aber nicht Ihre persönliche Daten gefährdet. Diese Daten werden nach jedem Start Ihres Handys verschickt.\n\nTippen sie auf Datenvorschau um ein Beispiel anzuzeigen.</string>
+  <string name="anonymous_statistics_warning">Durch die Aktivierung der ROM-Statistiken werden unpersönliche Daten zu den
+Entwicklern dieser ROM geschickt, um die Zahl der Installationen auf Geräten zu zählen. Diese Informationen beinhalten unter anderem ein einzigartiges Identifizierungszeichen,
+das aber nicht Ihre persönliche Daten gefährdet. Diese Daten werden nach jedem Start Ihres Handys verschickt.\n\nTippen sie auf Datenvorschau um ein Beispiel anzuzeigen.</string>
   <string name="pref_settings">Einstellungen</string>
   <string name="enable_reporting_title">Berichte einschalten</string>
   <string name="disable_reporting_persistent">Dauerhaftes Opt-out</string>
@@ -45,7 +47,7 @@
   <string name="next_report_on">Nächster Bericht</string>
   <string name="app_signature">App-Signatur</string>
   <string name="pref_hideicon">Symbol nicht im Launcher anzeigen</string>
-  <string name="pref_hideicon_desc">Applikation Launcher-Symbol wird aus der App-Übersicht versteckt</string>
+  <string name="pref_hideicon_desc">Launcher-Symbol wird in der App-Übersicht versteckt</string>
   <string name="pref_uninstall">Deinstallieren</string>
   <string name="btn_yes">Ja</string>
   <string name="btn_no">Nein</string>

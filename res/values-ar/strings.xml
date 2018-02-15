@@ -21,7 +21,7 @@
   <string name="notification_ticker">إحصائيات اختار في</string>
   <string name="notification_title">احصائيات الروم</string>
   <string name="notification_desc">تمكين أو تعطيل إحصائيات مجهولة المصدر</string>
-  <string name="main_link">&lt; href = \"http://www.cyanogenmod.org/blog/cmstats-what-it-is-and-why-you-should-opt-in\" &gt; \"تعلم أكثر\" &lt;/a &gt;</string>
+  <string name="main_link">&lt;a href=&quot;http://www.cyanogenmod.org/blog/cmstats-what-it-is-and-why-you-should-opt-in&quot;&gt;اعرف اكثر&lt;/a&gt;</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
   <string name="anonymous_statistics_title">احصائيات الروم</string>

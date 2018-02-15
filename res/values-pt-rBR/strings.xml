@@ -18,21 +18,19 @@
   <!-- Main -->
   <string name="main_title">Uso de dados anônimo</string>
   <!-- Notification -->
-  <string name="notification_ticker">Optar por Estatísticas</string>
+  <string name="notification_ticker">Estatísticas</string>
   <string name="notification_title">Estatísticas da ROM</string>
   <string name="notification_desc">Habilitar ou desabilitar estatísticas anónimas</string>
   <string name="main_link">&lt;a href=&quot;http://www.cyanogenmod.org/blog/cmstats-what-it-is-and-why-you-should-opt-in&quot;&gt;Leia mais&lt;/a&gt;</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
   <string name="anonymous_statistics_title">Estatísticas da ROM</string>
-  <string name="anonymous_statistics_summary">Ajude a fazer essa ROM melhor optando por enviar dados de uso anônimos</string>
+  <string name="anonymous_statistics_summary">Ajude a fazer essa ROM melhor optando por enviar dados anônimos de uso</string>
   <string name="anonymous_statistics_warning_title">Sobre</string>
-  <string name="anonymous_statistics_warning">Optando em Estatísticas da ROM permitirá que os dados não-pessoais para ser submetido à
-        desenvolvedores da ROM para acompanhar instalações únicas em vários dispositivos. A informação apresentada inclui um identificador único,
-        que não comprometa a sua privacidade ou dados pessoais. Os dados são apresentados em um intervalo regular decidido pelo desenvolvedor da ROM. \n\nPara um exemplo dos dados que é apresentado, toque na visualização de dados.</string>
+  <string name="anonymous_statistics_warning">Você pode permitir se dados anônimos devem ser enviados para os desenvolvedores da ROM, permitindo que eles acompanhem o número de instalações únicas em vários dispositivos. A informação apresentada inclui um identificador único, que não compromete a sua privacidade ou dados pessoais. Os dados são apresentados em um intervalo regular decidido pelo desenvolvedor da ROM. \n\nPara ver um exemplo do que é enviado toque em rpré-visualizar dados.</string>
   <string name="pref_settings">Configurações</string>
   <string name="enable_reporting_title">Habilitar relatório</string>
-  <string name="disable_reporting_persistent">Persistente opt-out</string>
+  <string name="disable_reporting_persistent">Recusar permanentemente</string>
   <string name="preview_data_title">Pré-visualizar Dados</string>
   <string name="preview_data_summary">%s </string>
   <string name="view_stats_title">Ver estatísticas</string>
