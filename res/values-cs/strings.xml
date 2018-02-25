@@ -38,11 +38,6 @@
   <string name="pref_stats">Informace</string>
   <string name="last_report_on">Hlášeno v poslední době</string>
   <string name="reporting_interval">Interval hlášení</string>
-  <plurals name="reporting_interval_days">
-    <item quantity="one">1 den</item>
-    <item quantity="few">%d dní</item>
-    <item quantity="other">%d dní</item>
-  </plurals>
   <string name="next_report_on">Další hlášení</string>
   <string name="app_signature">Podpis aplikace</string>
   <string name="pref_hideicon">Skrýt ikonu launcheru</string>
