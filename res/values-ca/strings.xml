@@ -19,7 +19,7 @@
   <string name="main_title">Dades d\'us anonimes</string>
   <!-- Notification -->
   <string name="notification_ticker">Consentiment de recopilació d\'estadístiques</string>
-  <string name="notification_title">Estadístiques</string>
+  <string name="notification_title">Estadístiques de la ROM</string>
   <string name="notification_desc">Activa o desactiva les estadístiques anònimes</string>
   <string name="main_link">&lt;a href=&quot;http://www.cyanogenmod.org/blog/cmstats-what-it-is-and-why-you-should-opt-in&quot;&gt;Learn More&lt;/a&gt;</string>
   <!-- Anonymous Statistics #CM -->

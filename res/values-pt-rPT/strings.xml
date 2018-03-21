@@ -16,16 +16,16 @@
 -->
 <resources>
   <!-- Main -->
-  <string name="main_title">Dados Anónimos de Utilização</string>
+  <string name="main_title">Utilização Anónima de Dados</string>
   <!-- Notification -->
   <string name="notification_ticker">Participar nas estatísticas</string>
   <string name="notification_title">Estatísticas da ROM</string>
   <string name="notification_desc">Ativar ou desativar estatísticas anónimas</string>
-  <string name="main_link">&lt;a href=&quot;https://www.facebook.com/notes/cyanogenmod/cmstats-what-it-is-and-why-you-should-opt-in/10150163289351183/&quot;&gt;Saber mais&lt;/a&gt;</string>
+  <string name="main_link">&lt;a href=&quot;http://www.cyanogenmod.org/blog/cmstats-what-it-is-and-why-you-should-opt-in&quot;&gt;Saber Mais&lt;/a&gt;</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
   <string name="anonymous_statistics_title">Estatísticas da ROM</string>
-  <string name="anonymous_statistics_summary">Ajudar a fazer esta ROM melhor, optando pelos relatórios de estatísticas anónimos</string>
+  <string name="anonymous_statistics_summary">Ajude a tornar esta ROM melhor optando pelo envio de relatórios anónimos de estatísticas</string>
   <string name="anonymous_statistics_warning_title">Sobre</string>
   <string name="anonymous_statistics_warning">Optar pelo envio de estatísticas da ROM vai permitir que dados não pessoais sejam transmitidos aos desenvolvedores da ROM para rastreio de instalações nos dispositivos. As informações enviadas incluem um identificador único, que não comprometem a sua privacidade ou dados pessoais. Os dados são enviados num intervalo regular escolhido pelo desenvolvedor da ROM.\n\nPara um exemplo dos dados que são enviados, toque em Pré-visualizar dados.</string>
   <string name="pref_settings">Definições</string>
@@ -44,7 +44,7 @@
   </plurals>
   <string name="next_report_on">Próximo relatório</string>
   <string name="app_signature">Assinatura da aplicação</string>
-  <string name="pref_hideicon">Ocultar ícone no lançador</string>
+  <string name="pref_hideicon">Ocultar ícone da página inicial</string>
   <string name="pref_hideicon_desc">O ícone da aplicação será escondido do seu painel de aplicações</string>
   <string name="pref_uninstall">Desinstalar</string>
   <string name="btn_yes">Sim</string>
@@ -57,10 +57,10 @@
   <string name="preview_carrier_title">Operadora</string>
   <string name="preview_romname_title">Nome da ROM</string>
   <string name="preview_romversion_title">Versão da ROM</string>
-  <string name="pref_info">Ajuda e suporte</string>
+  <string name="pref_info">Ajuda e Suporte</string>
   <string name="pref_info_about">Sobre</string>
   <string name="pref_info_changelog">Registo de alterações</string>
-  <string name="pref_info_changelog_desc">Mostrar registo de alterações</string>
+  <string name="pref_info_changelog_desc">Ver registo de alterações</string>
   <string name="pref_info_website">Google+</string>
   <string name="pref_info_website_url">https://plus.google.com/u/0/communities/109352646351468373340</string>
 </resources>
