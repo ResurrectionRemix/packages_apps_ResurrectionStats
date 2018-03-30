@@ -40,7 +40,7 @@
   <string name="reporting_interval">Интервал отсылки отчетов</string>
   <plurals name="reporting_interval_days">
     <item quantity="one">1 день</item>
-    <item quantity="few">%d день</item>
+    <item quantity="few">%d дней</item>
     <item quantity="many">%d дней</item>
     <item quantity="other">%d дня(ей)</item>
   </plurals>
