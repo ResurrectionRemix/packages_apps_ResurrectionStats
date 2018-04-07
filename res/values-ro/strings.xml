@@ -33,7 +33,7 @@
   <string name="disable_reporting_persistent">Renunţare repetată</string>
   <string name="preview_data_title">Previzualizare date</string>
   <string name="preview_data_summary">%s</string>
-  <string name="view_stats_title">Vizualizare stare</string>
+  <string name="view_stats_title">Vizualizare statistici</string>
   <string name="anonymous_learn_more">Aflați mai multe</string>
   <string name="pref_stats">Informații</string>
   <string name="last_report_on">Ultima raportare</string>

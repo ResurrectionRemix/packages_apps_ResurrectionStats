@@ -38,6 +38,12 @@
   <string name="pref_stats">Informacje</string>
   <string name="last_report_on">Ostatnio zgłoszone</string>
   <string name="reporting_interval">Częstotliwość raportowania</string>
+  <plurals name="reporting_interval_days">
+    <item quantity="one">1 dzień</item>
+    <item quantity="few">%d dni</item>
+    <item quantity="many">%d dni</item>
+    <item quantity="other">%d dni</item>
+  </plurals>
   <string name="next_report_on">Następny raport</string>
   <string name="app_signature">Podpis aplikacji</string>
   <string name="pref_hideicon">Ukryj ikonę w Launcherze</string>
