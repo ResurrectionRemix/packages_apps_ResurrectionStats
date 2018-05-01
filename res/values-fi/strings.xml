@@ -38,6 +38,10 @@
   <string name="pref_stats">Tiedot</string>
   <string name="last_report_on">Viimeksi raportoitu</string>
   <string name="reporting_interval">Raportointiväli</string>
+  <plurals name="reporting_interval_days">
+    <item quantity="one">1 päivä</item>
+    <item quantity="other">%d päivää</item>
+  </plurals>
   <string name="next_report_on">Seuraava raportti</string>
   <string name="app_signature">Sovelluksen allekirjoitus</string>
   <string name="pref_hideicon">Piilota kuvake launcherista</string>
@@ -53,6 +57,7 @@
   <string name="preview_carrier_title">Operaattori</string>
   <string name="preview_romname_title">ROM:n nimi</string>
   <string name="preview_romversion_title">ROM:n versio</string>
+  <string name="pref_info">Tietoja &amp; tuki</string>
   <string name="pref_info_about">Tietoja</string>
   <string name="pref_info_changelog">Muutosloki</string>
   <string name="pref_info_changelog_desc">Näytä muutosloki</string>
