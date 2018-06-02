@@ -25,7 +25,7 @@
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
   <string name="anonymous_statistics_title">ROMの統計情報</string>
-  <string name="anonymous_statistics_summary">匿名の統計情報を送信することで、ROMの改善に貢献することができます。</string>
+  <string name="anonymous_statistics_summary">匿名の統計情報を送信することでROMの改善に貢献することができます</string>
   <string name="anonymous_statistics_warning_title">アプリについて</string>
   <string name="anonymous_statistics_warning">ROMの統計情報の送信を許可すると、個人情報を含まないデータが開発者に送信され、開発者がデバイス単位でのインストール数を追跡できるようになります。送信される情報にはユニークIDが含まれますが、プライバシーや個人情報は送信されません。データは開発者の定めた周期で送信されます。\n\n送信されるデータを確認するには、\"統計情報のプレビュー\"をタッチしてください。</string>
   <string name="pref_settings">設定</string>
