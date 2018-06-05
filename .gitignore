@@ -12,3 +12,4 @@ gradlew*
 captures/
 *.jks
 /system_libs/
+keystore.properties
