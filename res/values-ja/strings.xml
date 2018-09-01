@@ -20,7 +20,7 @@
   <!-- Notification -->
   <string name="notification_ticker">統計情報を送信する</string>
   <string name="notification_title">ROMの統計情報</string>
-  <string name="notification_desc">匿名の統計情報を有効 / 無効にする</string>
+  <string name="notification_desc">匿名の統計情報を切り替える</string>
   <string name="main_link">&lt;a href=&quot;http://www.cyanogenmod.org/blog/cmstats-what-it-is-and-why-you-should-opt-in&quot;&gt;詳細情報&lt;/a&gt;</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
