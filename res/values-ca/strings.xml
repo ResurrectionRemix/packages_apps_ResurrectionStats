@@ -15,52 +15,52 @@
      limitations under the License.
 -->
 <resources>
-  <!-- Main -->
-  <string name="main_title">Dades d\'us anonimes</string>
-  <!-- Notification -->
-  <string name="notification_ticker">Consentiment de recopilació d\'estadístiques</string>
-  <string name="notification_title">Estadístiques de la ROM</string>
-  <string name="notification_desc">Activa o desactiva les estadístiques anònimes</string>
-  <string name="main_link">&lt;a href=&quot;http://www.cyanogenmod.org/blog/cmstats-what-it-is-and-why-you-should-opt-in&quot;&gt;Learn More&lt;/a&gt;</string>
-  <!-- Anonymous Statistics #CM -->
-  <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-  <string name="anonymous_statistics_title">Estadístiques de la ROM</string>
-  <string name="anonymous_statistics_summary">Ajuda a fer millor aquesta ROM optant a transmetre estadístiques anònimes</string>
-  <string name="anonymous_statistics_warning_title">En quant a</string>
-  <string name="anonymous_statistics_warning">Activant la recopilació d\'estadístiques de la ROM, permet que informació no personal pugui ser enviada als desenvolupadors de la ROM per realitzar un seguiment d\'instal·lacions úniques als dispositius. La informació presentada inclou un identificador únic, que no compromet la seva privacitat o dades personals. Les dades s\'envien en un interval de temps decidit pel desenvolupador de la ROM.\n\nPer exemple de les dades enviades toc l\'opció de Pre-visualitzar dades.</string>
-  <string name="pref_settings">Configuració</string>
-  <string name="enable_reporting_title">Activa els informes</string>
-  <string name="disable_reporting_persistent">Desistència persistent</string>
-  <string name="preview_data_title">Vista prèvia de les dades</string>
-  <string name="preview_data_summary">%s</string>
-  <string name="view_stats_title">Visualització d\'estadístiques</string>
-  <string name="anonymous_learn_more">Saber-ne més</string>
-  <string name="pref_stats">Informació</string>
-  <string name="last_report_on">Últim informe</string>
-  <string name="reporting_interval">Interval de presentació d\'informes</string>
-  <plurals name="reporting_interval_days">
-    <item quantity="one">1 dia</item>
-    <item quantity="other">%d dies</item>
-  </plurals>
-  <string name="next_report_on">Informe següent</string>
-  <string name="app_signature">Signatura de l\'aplicació</string>
-  <string name="pref_hideicon">Amaga l\'icona del calaix d\'aplicacions</string>
-  <string name="pref_hideicon_desc">La icona de l\'aplicació serà amagada del calaix d\'aplicacions</string>
-  <string name="pref_uninstall">Desinstal·la</string>
-  <string name="btn_yes">Sí</string>
-  <string name="btn_no">No</string>
-  <!-- Anonymous Statistics - Preview -->
-  <string name="preview_id_title">ID únic</string>
-  <string name="preview_device_title">Dispositiu</string>
-  <string name="preview_version_title">Versió</string>
-  <string name="preview_country_title">País</string>
-  <string name="preview_carrier_title">Operadora mòbil</string>
-  <string name="preview_romname_title">Nom de la ROM</string>
-  <string name="preview_romversion_title">Versió de la ROM</string>
-  <string name="pref_info">Sobre &amp; Soport</string>
-  <string name="pref_info_about">En quant a</string>
-  <string name="pref_info_changelog">Canvis de la versió</string>
-  <string name="pref_info_changelog_desc">Mostra el registre de canvis</string>
-  <string name="pref_info_website">Google+</string>
-  <string name="pref_info_website_url">https://plus.google.com/u/0/communities/109352646351468373340</string>
+    <!-- Main -->
+    <string name="main_title">Dades d\'us anonimes</string>
+    <!-- Notification -->
+    <string name="notification_ticker">Consentiment de recopilació d\'estadístiques</string>
+    <string name="notification_title">Estadístiques de la ROM</string>
+    <string name="notification_desc">Activa o desactiva les estadístiques anònimes</string>
+    <string name="main_link">&lt;a href=&quot;http://www.cyanogenmod.org/blog/cmstats-what-it-is-and-why-you-should-opt-in&quot;&gt;Learn More&lt;/a&gt;</string>
+    <!-- Anonymous Statistics #CM -->
+    <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
+    <string name="anonymous_statistics_title">Estadístiques de la ROM</string>
+    <string name="anonymous_statistics_summary">Ajuda a fer millor aquesta ROM optant a transmetre estadístiques anònimes</string>
+    <string name="anonymous_statistics_warning_title">En quant a</string>
+    <string name="anonymous_statistics_warning">Activant la recopilació d\'estadístiques de la ROM, permet que informació no personal pugui ser enviada als desenvolupadors de la ROM per realitzar un seguiment d\'instal·lacions úniques als dispositius. La informació presentada inclou un identificador únic, que no compromet la seva privacitat o dades personals. Les dades s\'envien en un interval de temps decidit pel desenvolupador de la ROM.\n\nPer exemple de les dades enviades toc l\'opció de Pre-visualitzar dades.</string>
+    <string name="pref_settings">Configuració</string>
+    <string name="enable_reporting_title">Activa els informes</string>
+    <string name="disable_reporting_persistent">Desistència persistent</string>
+    <string name="preview_data_title">Vista prèvia de les dades</string>
+    <string name="preview_data_summary">%s</string>
+    <string name="view_stats_title">Visualització d\'estadístiques</string>
+    <string name="anonymous_learn_more">Saber-ne més</string>
+    <string name="pref_stats">Informació</string>
+    <string name="last_report_on">Últim informe</string>
+    <string name="reporting_interval">Interval de presentació d\'informes</string>
+    <plurals name="reporting_interval_days">
+        <item quantity="one">1 dia</item>
+        <item quantity="other">%d dies</item>
+    </plurals>
+    <string name="next_report_on">Informe següent</string>
+    <string name="app_signature">Signatura de l\'aplicació</string>
+    <string name="pref_hideicon">Amaga l\'icona del calaix d\'aplicacions</string>
+    <string name="pref_hideicon_desc">La icona de l\'aplicació serà amagada del calaix d\'aplicacions</string>
+    <string name="pref_uninstall">Desinstal·la</string>
+    <string name="btn_yes">Sí</string>
+    <string name="btn_no">No</string>
+    <!-- Anonymous Statistics - Preview -->
+    <string name="preview_id_title">ID únic</string>
+    <string name="preview_device_title">Dispositiu</string>
+    <string name="preview_version_title">Versió</string>
+    <string name="preview_country_title">País</string>
+    <string name="preview_carrier_title">Operadora mòbil</string>
+    <string name="preview_romname_title">Nom de la ROM</string>
+    <string name="preview_romversion_title">Versió de la ROM</string>
+    <string name="pref_info">Sobre &amp; Soport</string>
+    <string name="pref_info_about">En quant a</string>
+    <string name="pref_info_changelog">Canvis de la versió</string>
+    <string name="pref_info_changelog_desc">Mostra el registre de canvis</string>
+    <string name="pref_info_website">Google+</string>
+    <string name="pref_info_website_url">https://plus.google.com/u/0/communities/109352646351468373340</string>
 </resources>

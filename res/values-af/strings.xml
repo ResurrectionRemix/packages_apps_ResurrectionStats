@@ -15,9 +15,9 @@
      limitations under the License.
 -->
 <resources>
-  <!-- Main -->
-  <!-- Notification -->
-  <!-- Anonymous Statistics #CM -->
-  <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-  <!-- Anonymous Statistics - Preview -->
+    <!-- Main -->
+    <!-- Notification -->
+    <!-- Anonymous Statistics #CM -->
+    <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
+    <!-- Anonymous Statistics - Preview -->
 </resources>

@@ -31,15 +31,15 @@ public class PreviewActivity extends PreferenceActivity {
     private static final String ROMNAME = "preview_romname";
     private static final String ROMVERSION = "preview_romversion";
 
-	@SuppressWarnings("deprecation")
-	@Override
-	public void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
+    @SuppressWarnings("deprecation")
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
 
-		addPreferencesFromResource(R.xml.preview_data);
+        addPreferencesFromResource(R.xml.preview_data);
 
-		final PreferenceScreen prefSet = getPreferenceScreen();
-		final Context context = getApplicationContext();
+        final PreferenceScreen prefSet = getPreferenceScreen();
+        final Context context = getApplicationContext();
 
         prefSet.findPreference(UNIQUE_ID).setSummary(Utilities.getUniqueID(context));
         prefSet.findPreference(DEVICE).setSummary(Utilities.getDevice());
@@ -48,6 +48,6 @@ public class PreviewActivity extends PreferenceActivity {
         prefSet.findPreference(CARRIER).setSummary(Utilities.getCarrier(context));
         prefSet.findPreference(ROMNAME).setSummary(Utilities.getRomName());
         prefSet.findPreference(ROMVERSION).setSummary(Utilities.getRomVersion());
-	}
+    }
 
 }

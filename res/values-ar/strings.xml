@@ -15,56 +15,56 @@
      limitations under the License.
 -->
 <resources>
-  <!-- Main -->
-  <string name="main_title">بيانات استخدام مجهولة</string>
-  <!-- Notification -->
-  <string name="notification_ticker">إحصائيات اختار في</string>
-  <string name="notification_title">احصائيات الروم</string>
-  <string name="notification_desc">تمكين أو تعطيل إحصائيات مجهولة المصدر</string>
-  <string name="main_link">&lt;a href=&quot;http://www.cyanogenmod.org/blog/cmstats-what-it-is-and-why-you-should-opt-in&quot;&gt;اعرف اكثر&lt;/a&gt;</string>
-  <!-- Anonymous Statistics #CM -->
-  <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-  <string name="anonymous_statistics_title">احصائيات الروم</string>
-  <string name="anonymous_statistics_summary">ساهم في جعل هذه الروم أفضل عبر إرسال تبليغات الإحصائيات بدون إرسال معلوماتك الشخصية</string>
-  <string name="anonymous_statistics_warning_title">حول</string>
-  <string name="anonymous_statistics_warning">الولوج في إحصاءات الروم سيسمح بتقديم بيانات غير شخصية         لمطوري الروم لتعقب تثبيت النظام عبر الأجهزة المختلغة. المعلومات المقدمة تشمل معرّف فريد،         والذي لا يقايض خصوصيتك أو بياناتك الشخصية. البيانات تقدم بشكل دوري بحسب ما يقرر مطور الروم.\n\nكمثال على البيانات المقدمة، إضغط على عرض البيانات.</string>
-  <string name="pref_settings">الإعدادات</string>
-  <string name="enable_reporting_title">تفعيل التقارير</string>
-  <string name="disable_reporting_persistent">استمرار استبعاد</string>
-  <string name="preview_data_title">معاينة البيانات</string>
-  <string name="preview_data_summary">%s</string>
-  <string name="view_stats_title">عرض الإحصائيات</string>
-  <string name="anonymous_learn_more">لمعرفة المزيد</string>
-  <string name="pref_stats">معلومات</string>
-  <string name="last_report_on">اخر التقارير</string>
-  <string name="reporting_interval">الفاصل الزمني للتقرير</string>
-  <plurals name="reporting_interval_days">
-    <item quantity="zero">%d يوم</item>
-    <item quantity="one">%d يوم</item>
-    <item quantity="two">يومان</item>
-    <item quantity="few">أيام قليلة</item>
-    <item quantity="many">عدة أيام</item>
-    <item quantity="other">%d أيام</item>
-  </plurals>
-  <string name="next_report_on">التقرير التالي</string>
-  <string name="app_signature">توقيع التطبيق</string>
-  <string name="pref_hideicon">إخفاء أيقونة من اللانشر</string>
-  <string name="pref_hideicon_desc">سيتم إخفاء أيقونة التطبيق من درج التطبيقات الخاص بك</string>
-  <string name="pref_uninstall">إلغاء التثبيت</string>
-  <string name="btn_yes">نعم</string>
-  <string name="btn_no">لا</string>
-  <!-- Anonymous Statistics - Preview -->
-  <string name="preview_id_title">المعرف الفريد</string>
-  <string name="preview_device_title">الجهاز</string>
-  <string name="preview_version_title">الإصدار</string>
-  <string name="preview_country_title">البلد</string>
-  <string name="preview_carrier_title">مشغل شبكة الجوّال</string>
-  <string name="preview_romname_title">إسم الروم</string>
-  <string name="preview_romversion_title">إصدار الروم</string>
-  <string name="pref_info">حول &amp; الدعم</string>
-  <string name="pref_info_about">عن</string>
-  <string name="pref_info_changelog">سجل التغييرات</string>
-  <string name="pref_info_changelog_desc">إظهار سجل التغيير</string>
-  <string name="pref_info_website">غوغل بلس</string>
-  <string name="pref_info_website_url">https://plus.google.com/u/0/communities/109352646351468373340</string>
+    <!-- Main -->
+    <string name="main_title">بيانات استخدام مجهولة</string>
+    <!-- Notification -->
+    <string name="notification_ticker">إحصائيات اختار في</string>
+    <string name="notification_title">احصائيات الروم</string>
+    <string name="notification_desc">تمكين أو تعطيل إحصائيات مجهولة المصدر</string>
+    <string name="main_link">&lt;a href=&quot;http://www.cyanogenmod.org/blog/cmstats-what-it-is-and-why-you-should-opt-in&quot;&gt;اعرف اكثر&lt;/a&gt;</string>
+    <!-- Anonymous Statistics #CM -->
+    <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
+    <string name="anonymous_statistics_title">احصائيات الروم</string>
+    <string name="anonymous_statistics_summary">ساهم في جعل هذه الروم أفضل عبر إرسال تبليغات الإحصائيات بدون إرسال معلوماتك الشخصية</string>
+    <string name="anonymous_statistics_warning_title">حول</string>
+    <string name="anonymous_statistics_warning">الولوج في إحصاءات الروم سيسمح بتقديم بيانات غير شخصية         لمطوري الروم لتعقب تثبيت النظام عبر الأجهزة المختلغة. المعلومات المقدمة تشمل معرّف فريد،         والذي لا يقايض خصوصيتك أو بياناتك الشخصية. البيانات تقدم بشكل دوري بحسب ما يقرر مطور الروم.\n\nكمثال على البيانات المقدمة، إضغط على عرض البيانات.</string>
+    <string name="pref_settings">الإعدادات</string>
+    <string name="enable_reporting_title">تفعيل التقارير</string>
+    <string name="disable_reporting_persistent">استمرار استبعاد</string>
+    <string name="preview_data_title">معاينة البيانات</string>
+    <string name="preview_data_summary">%s</string>
+    <string name="view_stats_title">عرض الإحصائيات</string>
+    <string name="anonymous_learn_more">لمعرفة المزيد</string>
+    <string name="pref_stats">معلومات</string>
+    <string name="last_report_on">اخر التقارير</string>
+    <string name="reporting_interval">الفاصل الزمني للتقرير</string>
+    <plurals name="reporting_interval_days">
+        <item quantity="zero">%d يوم</item>
+        <item quantity="one">%d يوم</item>
+        <item quantity="two">يومان</item>
+        <item quantity="few">أيام قليلة</item>
+        <item quantity="many">عدة أيام</item>
+        <item quantity="other">%d أيام</item>
+    </plurals>
+    <string name="next_report_on">التقرير التالي</string>
+    <string name="app_signature">توقيع التطبيق</string>
+    <string name="pref_hideicon">إخفاء أيقونة من اللانشر</string>
+    <string name="pref_hideicon_desc">سيتم إخفاء أيقونة التطبيق من درج التطبيقات الخاص بك</string>
+    <string name="pref_uninstall">إلغاء التثبيت</string>
+    <string name="btn_yes">نعم</string>
+    <string name="btn_no">لا</string>
+    <!-- Anonymous Statistics - Preview -->
+    <string name="preview_id_title">المعرف الفريد</string>
+    <string name="preview_device_title">الجهاز</string>
+    <string name="preview_version_title">الإصدار</string>
+    <string name="preview_country_title">البلد</string>
+    <string name="preview_carrier_title">مشغل شبكة الجوّال</string>
+    <string name="preview_romname_title">إسم الروم</string>
+    <string name="preview_romversion_title">إصدار الروم</string>
+    <string name="pref_info">حول &amp; الدعم</string>
+    <string name="pref_info_about">عن</string>
+    <string name="pref_info_changelog">سجل التغييرات</string>
+    <string name="pref_info_changelog_desc">إظهار سجل التغيير</string>
+    <string name="pref_info_website">غوغل بلس</string>
+    <string name="pref_info_website_url">https://plus.google.com/u/0/communities/109352646351468373340</string>
 </resources>

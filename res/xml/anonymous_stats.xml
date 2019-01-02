@@ -16,55 +16,56 @@
 -->
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-    android:title="@string/anonymous_statistics_title" >
+                  android:title="@string/anonymous_statistics_title">
 
     <PreferenceCategory
-        android:key="pref_settings"
-        android:title="@string/pref_settings" >
+            android:key="pref_settings"
+            android:title="@string/pref_settings">
         <CheckBoxPreference
-            android:defaultValue="true"
-            android:disableDependentsState="true"
-            android:key="pref_anonymous_opt_in"
-            android:title="@string/enable_reporting_title" />
+                android:defaultValue="true"
+                android:disableDependentsState="true"
+                android:key="pref_anonymous_opt_in"
+                android:title="@string/enable_reporting_title"/>
         <CheckBoxPreference
-            android:defaultValue="false"
-            android:dependency="pref_anonymous_opt_in"
-            android:key="pref_anonymous_opt_out_persist"
-            android:title="@string/disable_reporting_persistent" />
+                android:defaultValue="false"
+                android:dependency="pref_anonymous_opt_in"
+                android:key="pref_anonymous_opt_out_persist"
+                android:title="@string/disable_reporting_persistent"/>
 
         <!-- Preference
             android:key="pref_uninstall_romstats"
             android:title="@string/pref_uninstall" /-->
     </PreferenceCategory>
-    
-    <PreferenceCategory android:title="@string/pref_stats" android:key="pref_stats">
-        <PreferenceScreen android:title="@string/preview_data_title" >
+
+    <PreferenceCategory
+            android:title="@string/pref_stats"
+            android:key="pref_stats">
+        <PreferenceScreen android:title="@string/preview_data_title">
             <intent
-                android:action="android.intent.action.VIEW"
-                android:targetClass="android.romstats.PreviewActivity"
-                android:targetPackage="android.romstats" />
+                    android:action="android.intent.action.VIEW"
+                    android:targetClass="android.romstats.PreviewActivity"
+                    android:targetPackage="android.romstats"/>
         </PreferenceScreen>
 
         <Preference
-            android:key="pref_view_stats"
-            android:title="@string/view_stats_title" />
+                android:key="pref_view_stats"
+                android:title="@string/view_stats_title"/>
         <Preference
-            android:key="pref_last_report_on"
-            android:title="@string/last_report_on" />
+                android:key="pref_last_report_on"
+                android:title="@string/last_report_on"/>
         <Preference
-            android:key="pref_reporting_interval"
-            android:title="@string/reporting_interval" />
+                android:key="pref_reporting_interval"
+                android:title="@string/reporting_interval"/>
         <Preference
-            android:key="pref_app_signature"
-            android:title="@string/app_signature" />
+                android:key="pref_app_signature"
+                android:title="@string/app_signature"/>
     </PreferenceCategory>
-    
-    <PreferenceCategory android:title="@string/pref_info" >
+
+    <PreferenceCategory android:title="@string/pref_info">
         <Preference
-            android:key="pref_about"
-            android:summary="@string/pref_info_about"
-            android:title="@string/app_name" />
+                android:key="pref_about"
+                android:summary="@string/pref_info_about"
+                android:title="@string/app_name"/>
         <!--
              Preference
             android:key="pref_changelog"
@@ -72,9 +73,9 @@
             android:title="@string/pref_info_changelog" /
         -->
         <Preference
-            android:key="pref_website"
-            android:summary="@string/pref_info_website_url"
-            android:title="@string/pref_info_website" />
+                android:key="pref_website"
+                android:summary="@string/pref_info_website_url"
+                android:title="@string/pref_info_website"/>
     </PreferenceCategory>
 
 </PreferenceScreen>
