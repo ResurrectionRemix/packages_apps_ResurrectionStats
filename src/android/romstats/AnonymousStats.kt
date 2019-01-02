@@ -215,7 +215,7 @@ class AnonymousStats : PreferenceActivity(), DialogInterface.OnClickListener, Di
             R.id.learn_more -> AlertDialog.Builder(this)
                 .setMessage(this.resources.getString(R.string.anonymous_statistics_warning))
                 .setTitle(R.string.anonymous_statistics_warning_title)
-                .setPositiveButton(android.R.string.ok) { dialog, which -> dialog.dismiss() }.show()
+                .setPositiveButton(android.R.string.ok) { dialog, _ -> dialog.dismiss() }.show()
             R.id.uninstall -> uninstallSelf()
             R.id.hideicon -> {
                 val dialogClickListener = DialogInterface.OnClickListener { dialog, which ->

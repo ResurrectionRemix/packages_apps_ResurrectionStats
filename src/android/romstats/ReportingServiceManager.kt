@@ -44,27 +44,21 @@ class ReportingServiceManager : BroadcastReceiver() {
 
     companion object {
 
-        private val MILLIS_PER_HOUR = 60L * 60L * 1000L
-        private val MILLIS_PER_DAY = 24L * MILLIS_PER_HOUR
+        private const val MILLIS_PER_HOUR = 60L * 60L * 1000L
+        private const val MILLIS_PER_DAY = 24L * MILLIS_PER_HOUR
 
         // UPDATE_INTERVAL days is set in the build.prop file
         // private static final long UPDATE_INTERVAL = 1L * MILLIS_PER_DAY;
 
         fun setAlarm(context: Context, millisFromNow: Long) {
-            var millisFromNow = millisFromNow
+            var millis = millisFromNow
             val prefs = AnonymousStats.getPreferences(context)
 
             //prefs.edit().putBoolean(AnonymousStats.ANONYMOUS_ALARM_SET, false).apply();
             //boolean firstBoot = prefs.getBoolean(AnonymousStats.ANONYMOUS_FIRST_BOOT, true);
 
             // get ANONYMOUS_OPT_IN pref, defaults to true (new behavior)
-            var optedIn = prefs.getBoolean(Const.ANONYMOUS_OPT_IN, true)
-
-            // If we want the old behavior, re-read OPT_IN but default to false
-            if (Utilities.reportingMode == Const.ROMSTATS_REPORTING_MODE_OLD) {
-                optedIn = prefs.getBoolean(Const.ANONYMOUS_OPT_IN, false)
-                Log.d(Const.TAG, "[setAlarm] AskFirstBoot, optIn=$optedIn")
-            }
+            val optedIn = prefs.getBoolean(Const.ANONYMOUS_OPT_IN, true)
 
             if (!optedIn) {
                 return
@@ -72,7 +66,7 @@ class ReportingServiceManager : BroadcastReceiver() {
 
             val updateInterval = Utilities.timeFrame * MILLIS_PER_DAY
 
-            if (millisFromNow <= 0) {
+            if (millis <= 0) {
                 var lastSynced = prefs.getLong(Const.ANONYMOUS_LAST_CHECKED, 0)
                 if (lastSynced == 0L) {
                     // never synced, so let's fake out that the last sync was just now.
@@ -82,17 +76,17 @@ class ReportingServiceManager : BroadcastReceiver() {
                     prefs.edit().putLong(Const.ANONYMOUS_LAST_CHECKED, lastSynced).apply()
                     Log.d(Const.TAG, "[setAlarm] Set alarm for first sync.")
                 }
-                millisFromNow = lastSynced + updateInterval - System.currentTimeMillis()
+                millis = lastSynced + updateInterval - System.currentTimeMillis()
             }
 
             val intent = Intent(ConnectivityManager.CONNECTIVITY_ACTION)
             intent.setClass(context, ReportingServiceManager::class.java)
 
-            val nextAlarm = System.currentTimeMillis() + millisFromNow
+            val nextAlarm = System.currentTimeMillis() + millis
 
             val alarmManager = context.getSystemService(Context.ALARM_SERVICE) as AlarmManager
             alarmManager.set(AlarmManager.RTC_WAKEUP, nextAlarm, PendingIntent.getBroadcast(context, 0, intent, 0))
-            Log.d(Const.TAG, "[setAlarm] Next sync attempt in : " + millisFromNow / MILLIS_PER_HOUR + " hours")
+            Log.d(Const.TAG, "[setAlarm] Next sync attempt in : " + millis / MILLIS_PER_HOUR + " hours")
 
             prefs.edit().putLong(Const.ANONYMOUS_NEXT_ALARM, nextAlarm).apply()
         }
@@ -102,7 +96,7 @@ class ReportingServiceManager : BroadcastReceiver() {
 
             val networkInfo = cm.activeNetworkInfo
             Log.d(Const.TAG, "[launchService] networkInfo: " + networkInfo!!)
-            if (networkInfo == null || !networkInfo.isConnected) {
+            if (!networkInfo.isConnected) {
                 return
             }
 

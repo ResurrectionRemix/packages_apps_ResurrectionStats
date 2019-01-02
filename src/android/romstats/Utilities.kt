@@ -76,7 +76,7 @@ object Utilities {
      *
      * @return boolean
      */
-    val reportingMode: Int = 0
+    const val reportingMode: Int = 0
 
     @SuppressLint("HardwareIds")
     fun getUniqueID(ctx: Context): String? {

@@ -11,7 +11,6 @@ object Const {
     const val ANONYMOUS_LAST_REPORT_VERSION = "pref_anonymous_last_rep_version"
     const val ANONYMOUS_NEXT_ALARM = "pref_anonymous_next_alarm"
 
-    const val ROMSTATS_REPORTING_MODE_NEW = 0 // new CM10.1: no user prompt, default TRUE, first time after tframe
     const val ROMSTATS_REPORTING_MODE_OLD = 1 // old CM10  : user prompt, default FALSE, first time immediately
 
     const val STATS_URL = "https://resurrectionremix.sourceforge.io"

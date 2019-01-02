@@ -47,8 +47,8 @@ class ReportingService : Service() {
             canReport = false
         }
 
-        val RomStatsUrl = Utilities.statsUrl
-        if (RomStatsUrl == null || RomStatsUrl.isEmpty()) {
+        val romStatsUrl = Utilities.statsUrl
+        if (romStatsUrl == null || romStatsUrl.isEmpty()) {
             Log.e(Const.TAG, "This ROM is not configured for ROM Statistics.")
             canReport = false
         }
@@ -70,8 +70,7 @@ class ReportingService : Service() {
 
         val mainActivity = Intent(applicationContext, AnonymousStats::class.java)
         val pendingIntent = PendingIntent.getActivity(applicationContext, 0, mainActivity, 0)
-
-        val notification = NotificationCompat.Builder(baseContext)
+        val notification = NotificationCompat.Builder(baseContext, "romstats")
             .setSmallIcon(R.drawable.ic_launcher)
             .setTicker(getString(R.string.notification_ticker))
             .setContentTitle(getString(R.string.notification_title))
@@ -136,7 +135,7 @@ class ReportingService : Service() {
             val context = this@ReportingService
             val interval: Long
 
-            if (result!!) {
+            interval = if (result!!) {
                 val prefs = AnonymousStats.getPreferences(context)
 
                 // save the current date for future checkins
@@ -146,10 +145,10 @@ class ReportingService : Service() {
                 prefs.edit().putString(Const.ANONYMOUS_LAST_REPORT_VERSION, Utilities.romVersionHash).apply()
 
                 // set interval = 0; this causes setAlarm to schedule next report after UPDATE_INTERVAL
-                interval = 0
+                0
             } else {
                 // error, try again in 3 hours
-                interval = 3L * 60L * 60L * 1000L
+                3L * 60L * 60L * 1000L
             }
 
             ReportingServiceManager.setAlarm(context, interval)

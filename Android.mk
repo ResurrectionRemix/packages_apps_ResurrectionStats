@@ -8,7 +8,7 @@ LOCAL_PRIVATE_PLATFORM_APIS := false
 LOCAL_PACKAGE_NAME := ResurrectionStats
 LOCAL_CERTIFICATE := platform
 LOCAL_MANIFEST_FILE := AndroidManifest-aosp.xml
-LOCAL_STATIC_JAVA_LIBRARIES := androidx.core_core androidx.appcompat_appcompat
+LOCAL_STATIC_JAVA_LIBRARIES := androidx.core_core androidx.appcompat_appcompat androidx.preference_preference
 
 include $(BUILD_PACKAGE)
 

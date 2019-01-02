@@ -17,25 +17,36 @@
 package android.romstats
 
 import android.os.Bundle
-import android.preference.PreferenceActivity
+import androidx.appcompat.app.AppCompatActivity
+import androidx.preference.PreferenceFragmentCompat
 
-class PreviewActivity : PreferenceActivity() {
+class PreviewActivity : AppCompatActivity() {
 
-    public override fun onCreate(savedInstanceState: Bundle?) {
+    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        if (supportFragmentManager.findFragmentById(android.R.id.content) == null) {
+            supportFragmentManager.beginTransaction()
+                .replace(android.R.id.content, SettingsFragment())
+                .commit()
+        }
+    }
 
-        addPreferencesFromResource(R.xml.preview_data)
+    class SettingsFragment: PreferenceFragmentCompat() {
+        override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
+            addPreferencesFromResource(R.xml.preview_data)
 
-        val prefSet = preferenceScreen
-        val context = applicationContext
+            val prefSet = preferenceScreen
+            val context = context!!
 
-        prefSet.findPreference(UNIQUE_ID).summary = Utilities.getUniqueID(context)
-        prefSet.findPreference(DEVICE).summary = Utilities.device
-        prefSet.findPreference(VERSION).summary = Utilities.modVersion
-        prefSet.findPreference(COUNTRY).summary = Utilities.getCountryCode(context)
-        prefSet.findPreference(CARRIER).summary = Utilities.getCarrier(context)
-        prefSet.findPreference(ROMNAME).summary = Utilities.romName
-        prefSet.findPreference(ROMVERSION).summary = Utilities.romVersion
+            prefSet.findPreference(UNIQUE_ID).summary = Utilities.getUniqueID(context)
+            prefSet.findPreference(DEVICE).summary = Utilities.device
+            prefSet.findPreference(VERSION).summary = Utilities.modVersion
+            prefSet.findPreference(COUNTRY).summary = Utilities.getCountryCode(context)
+            prefSet.findPreference(CARRIER).summary = Utilities.getCarrier(context)
+            prefSet.findPreference(ROMNAME).summary = Utilities.romName
+            prefSet.findPreference(ROMVERSION).summary = Utilities.romVersion
+
+        }
     }
 
     companion object {
