@@ -27,16 +27,13 @@ import android.os.AsyncTask;
 import android.os.IBinder;
 import android.util.Log;
 import androidx.core.app.NotificationCompat;
-import org.apache.http.NameValuePair;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.entity.UrlEncodedFormEntity;
-import org.apache.http.client.methods.HttpPost;
-import org.apache.http.impl.client.DefaultHttpClient;
-import org.apache.http.message.BasicNameValuePair;
 
+import javax.net.ssl.HttpsURLConnection;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
+import java.net.SocketTimeoutException;
+import java.net.URL;
+import java.util.HashMap;
+import java.util.function.BiConsumer;
 
 public class ReportingService extends Service {
 
@@ -117,26 +114,29 @@ public class ReportingService extends Service {
             Log.d(Const.TAG, "SERVICE: ROM Name=" + romName);
             Log.d(Const.TAG, "SERVICE: ROM Version=" + romVersion);
 
-            // report to the cmstats service
-            HttpClient httpClient = new DefaultHttpClient();
-            HttpPost httpPost = new HttpPost(romStatsUrl + "submit-o.php");
+            // report to the rrstats service
+            final HashMap<String, String> headers = new HashMap<>();
+            headers.put("device_hash", deviceId);
+            headers.put("device_name", deviceName);
+            headers.put("device_version", deviceVersion);
+            headers.put("device_country", deviceCountry);
+            headers.put("device_carrier", deviceCarrier);
+            headers.put("device_carrier_id", deviceCarrierId);
+            headers.put("rom_name", romName);
             boolean success = false;
-
             try {
-                List<NameValuePair> kv = new ArrayList<NameValuePair>(5);
-                kv.add(new BasicNameValuePair("device_hash", deviceId));
-                kv.add(new BasicNameValuePair("device_name", deviceName));
-                kv.add(new BasicNameValuePair("device_version", deviceVersion));
-                kv.add(new BasicNameValuePair("device_country", deviceCountry));
-                kv.add(new BasicNameValuePair("device_carrier", deviceCarrier));
-                kv.add(new BasicNameValuePair("device_carrier_id", deviceCarrierId));
-                kv.add(new BasicNameValuePair("rom_name", romName));
-                kv.add(new BasicNameValuePair("rom_version", romVersion));
-
-                httpPost.setEntity(new UrlEncodedFormEntity(kv));
-                httpClient.execute(httpPost);
-
+                URL url = new URL(romStatsUrl + "submit-p.php");
+                final HttpsURLConnection client = (HttpsURLConnection) url.openConnection();
+                client.setRequestMethod("POST");
+                headers.forEach(new BiConsumer<String, String>() {
+                    @Override
+                    public void accept(String key, String value) {
+                        client.setRequestProperty(key, value);
+                    }
+                });
                 success = true;
+            } catch (SocketTimeoutException e) {
+                Log.d(Const.TAG, "Timed out connecting to server", e);
             } catch (IOException e) {
                 Log.w(Const.TAG, "Could not upload stats checkin", e);
             }
