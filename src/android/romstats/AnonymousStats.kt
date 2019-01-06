@@ -204,6 +204,10 @@ class AnonymousStats: AppCompatActivity() {
                 lastCheckStr = resources.getString(R.string.last_report_on) + ": " + lastCheckStr
 
                 mPrefHolder = preferenceManager.findPreference(PREF_LAST_REPORT_ON)
+                mPrefHolder.setOnPreferenceClickListener {
+                    ReportingServiceManager.launchService(ctx, true)
+                    true
+                }
                 mPrefHolder.title = lastCheckStr
 
                 val nextCheck = mPrefs.getLong(Const.ANONYMOUS_NEXT_ALARM, 0)

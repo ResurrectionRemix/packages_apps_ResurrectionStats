@@ -91,7 +91,7 @@ class ReportingServiceManager : BroadcastReceiver() {
             prefs.edit().putLong(Const.ANONYMOUS_NEXT_ALARM, nextAlarm).apply()
         }
 
-        fun launchService(context: Context) {
+        fun launchService(context: Context, force: Boolean = false) {
             val cm = context.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
 
             val networkInfo = cm.activeNetworkInfo
@@ -134,7 +134,7 @@ class ReportingServiceManager : BroadcastReceiver() {
             val updateInterval = Utilities.timeFrame * MILLIS_PER_DAY
 
             val timeLeft = System.currentTimeMillis() - lastSynced
-            if (timeLeft < updateInterval) {
+            if (timeLeft < updateInterval && !force) {
                 Log.d(Const.TAG, "Waiting for next sync : " + timeLeft / MILLIS_PER_HOUR + " hours")
                 return
             }
