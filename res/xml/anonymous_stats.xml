@@ -56,9 +56,6 @@
         <Preference
                 android:key="pref_reporting_interval"
                 android:title="@string/reporting_interval"/>
-        <Preference
-                android:key="pref_app_signature"
-                android:title="@string/app_signature"/>
     </PreferenceCategory>
 
     <PreferenceCategory android:title="@string/pref_info">

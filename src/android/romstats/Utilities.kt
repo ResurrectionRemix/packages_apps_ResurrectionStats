@@ -56,9 +56,9 @@ object Utilities {
 
     val modVersion: String = SystemProperties.get("ro.build.display.id")
 
-    val romName: String = Const.ROMNAME
+    const val romName: String = Const.ROMNAME
 
-    val romVersion: String = Const.RR_VERSION
+    const val romVersion: String = Const.RR_VERSION
 
     val romVersionHash: String?
         get() {
