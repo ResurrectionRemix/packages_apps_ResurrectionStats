@@ -97,6 +97,7 @@ class ReportingServiceManager : BroadcastReceiver() {
             val networkInfo = cm.activeNetworkInfo
             Log.d(Const.TAG, "[launchService] networkInfo: " + networkInfo!!)
             if (!networkInfo.isConnected) {
+                Log.d(Const.TAG, "[launchService] User is not connected")
                 return
             }
 
@@ -104,6 +105,7 @@ class ReportingServiceManager : BroadcastReceiver() {
 
             val optedIn = prefs.getBoolean(Const.ANONYMOUS_OPT_IN, true)
             if (!optedIn) {
+                Log.d(Const.TAG, "[launchService] User has not opted in")
                 return
             }
 
