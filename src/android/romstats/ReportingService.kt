@@ -25,7 +25,9 @@ import android.os.AsyncTask
 import android.os.IBinder
 import android.util.Log
 import androidx.core.app.NotificationCompat
+import java.io.BufferedReader
 import java.io.IOException
+import java.io.InputStreamReader
 import java.lang.ref.WeakReference
 import java.net.SocketTimeoutException
 import java.net.URL
@@ -126,7 +128,34 @@ class ReportingService : Service() {
                     val client = url.openConnection() as HttpsURLConnection
                     client.requestMethod = "POST"
                     headers.forEach { key, value -> client.setRequestProperty(key, value) }
-                    success = true
+                    client.doOutput = true
+                    val responseCode = client.responseCode
+                    if (responseCode == HttpsURLConnection.HTTP_OK) {
+                        val reader = BufferedReader(InputStreamReader(client.inputStream))
+                        val response = StringBuilder()
+                        var line: String?
+                        while (true) {
+                            line = reader.readLine()
+                            if (line == null)
+                                break
+                            response.append(line)
+                        }
+                        reader.close()
+                        Log.d(Const.TAG, "server output: $response")
+                        success = true
+                    } else {
+                        val reader = BufferedReader(InputStreamReader(client.errorStream))
+                        val response = StringBuilder()
+                        var line: String?
+                        while (true) {
+                            line = reader.readLine()
+                            if (line == null)
+                                break
+                            response.append(line)
+                        }
+                        reader.close()
+                        Log.d(Const.TAG, "server error: $response")
+                    }
                 } catch (e: SocketTimeoutException) {
                     Log.d(Const.TAG, "Timed out connecting to server", e)
                 } catch (e: IOException) {
