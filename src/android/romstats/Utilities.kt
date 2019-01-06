@@ -69,15 +69,6 @@ object Utilities {
     val timeFrame: Long
         get() = Const.TIMEFRAME.toLong()
 
-    /**
-     * Gets the Ask First value
-     * 0: RomStats will behave like CMStats, starts reporting automatically after the tframe (default)
-     * 1: RomStats will behave like the old CMStats, asks the user on first boot
-     *
-     * @return boolean
-     */
-    const val reportingMode: Int = 0
-
     @SuppressLint("HardwareIds")
     fun getUniqueID(ctx: Context): String? {
         var deviceId = digest(Settings.Secure.getString(ctx.contentResolver, Settings.Secure.ANDROID_ID))

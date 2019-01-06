@@ -108,9 +108,8 @@ class ReportingServiceManager : BroadcastReceiver() {
             }
 
             val firstBoot = prefs.getBoolean(Const.ANONYMOUS_FIRST_BOOT, true)
-            if (firstBoot && Utilities.reportingMode == Const.ROMSTATS_REPORTING_MODE_OLD) {
+            if (firstBoot) {
                 Log.d(Const.TAG, "[launchService] MODE=1 & firstBoot -> prompt user")
-
                 // promptUser is called through a service because it cannot be called from a BroadcastReceiver
                 val intent = Intent()
                 intent.setClass(context, ReportingService::class.java)
