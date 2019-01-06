@@ -117,7 +117,7 @@ class ReportingService : Service() {
             headers["rom_name"] = romName
             var success = false
             try {
-                val url = URL(romStatsUrl + "submit-p.php")
+                val url = URL(romStatsUrl + "submit.php")
                 val client = url.openConnection() as HttpsURLConnection
                 client.requestMethod = "POST"
                 headers.forEach { key, value -> client.setRequestProperty(key, value) }
@@ -127,7 +127,6 @@ class ReportingService : Service() {
             } catch (e: IOException) {
                 Log.w(Const.TAG, "Could not upload stats checkin", e)
             }
-
             return success
         }
 

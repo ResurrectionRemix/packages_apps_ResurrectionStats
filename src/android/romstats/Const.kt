@@ -13,7 +13,7 @@ object Const {
 
     const val ROMSTATS_REPORTING_MODE_OLD = 1 // old CM10  : user prompt, default FALSE, first time immediately
 
-    const val STATS_URL = "https://resurrectionremix.sourceforge.io"
+    const val STATS_URL = "https://resurrectionremix.sourceforge.io/"
     const val RR_VERSION = "6.0.0"
     const val ROMNAME = "ResurrectionRemix"
     const val TIMEFRAME = 1
