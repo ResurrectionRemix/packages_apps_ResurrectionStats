@@ -14,4 +14,5 @@ object Const {
     const val RR_VERSION = "6.0.0"
     const val ROMNAME = "ResurrectionRemix"
     const val TIMEFRAME = 1
+    val DEBUG = BuildConfig.DEBUG
 }

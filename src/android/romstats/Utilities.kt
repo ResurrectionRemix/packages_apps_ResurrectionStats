@@ -20,6 +20,7 @@ import android.annotation.SuppressLint
 import android.content.ComponentName
 import android.content.Context
 import android.content.pm.PackageManager
+import android.os.Build
 import android.os.Environment
 import android.os.SystemProperties
 import android.preference.PreferenceManager
@@ -52,7 +53,7 @@ object Utilities {
             return returnUrl
         }
 
-    val device: String = SystemProperties.get("ro.rr.device")
+    val device: String = if (Const.DEBUG) Build.DEVICE else SystemProperties.get("ro.rr.device")
 
     val modVersion: String = SystemProperties.get("ro.build.display.id")
 
