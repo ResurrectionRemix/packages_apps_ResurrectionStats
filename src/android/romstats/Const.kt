@@ -1,7 +1,6 @@
 package android.romstats
 
 object Const {
-
     const val TAG = "ResurrectionStats"
 
     const val ANONYMOUS_OPT_IN = "pref_anonymous_opt_in"
