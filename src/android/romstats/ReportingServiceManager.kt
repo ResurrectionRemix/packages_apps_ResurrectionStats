@@ -95,7 +95,12 @@ class ReportingServiceManager : BroadcastReceiver() {
             val cm = context.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
 
             val networkInfo = cm.activeNetworkInfo
-            Log.d(Const.TAG, "[launchService] networkInfo: " + networkInfo!!)
+            if (networkInfo == null) {
+                Log.d(Const.TAG, "[launchService] Can't get network info")
+                return
+            }
+
+            Log.d(Const.TAG, "[launchService] networkInfo: $networkInfo")
             if (!networkInfo.isConnected) {
                 Log.d(Const.TAG, "[launchService] User is not connected")
                 return
