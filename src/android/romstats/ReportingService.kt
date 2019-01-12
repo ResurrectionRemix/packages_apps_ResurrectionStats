@@ -103,18 +103,18 @@ class ReportingService : Service() {
 
                 val romStatsUrl = Utilities.statsUrl
 
-                Log.d(Const.TAG, "SERVICE: Report URL=" + romStatsUrl!!)
-                Log.d(Const.TAG, "SERVICE: Device ID=" + deviceId!!)
+                Log.d(Const.TAG, "SERVICE: Report URL=$romStatsUrl")
+                Log.d(Const.TAG, "SERVICE: Device ID=$deviceId")
                 Log.d(Const.TAG, "SERVICE: Device Name=$deviceName")
                 Log.d(Const.TAG, "SERVICE: Device Version=$deviceVersion")
                 Log.d(Const.TAG, "SERVICE: Country=$deviceCountry")
-                Log.d(Const.TAG, "SERVICE: Carrier=" + deviceCarrier!!)
-                Log.d(Const.TAG, "SERVICE: Carrier ID=" + deviceCarrierId!!)
+                Log.d(Const.TAG, "SERVICE: Carrier=$deviceCarrier")
+                Log.d(Const.TAG, "SERVICE: Carrier ID=$deviceCarrierId")
                 Log.d(Const.TAG, "SERVICE: ROM Name=$romName")
                 Log.d(Const.TAG, "SERVICE: ROM Version=$romVersion")
 
                 // report to the rrstats service
-                val headers = HashMap<String, String>()
+                val headers = HashMap<String, String?>()
                 headers["device_hash"] = deviceId
                 headers["device_name"] = deviceName
                 headers["device_version"] = deviceVersion
@@ -127,7 +127,7 @@ class ReportingService : Service() {
                     val url = URL(romStatsUrl + "submit.php")
                     val client = url.openConnection() as HttpsURLConnection
                     client.requestMethod = "POST"
-                    headers.forEach { key, value -> client.setRequestProperty(key, value) }
+                    headers.forEach { key, value -> client.setRequestProperty(key, value ?: "") }
                     client.doOutput = true
                     val responseCode = client.responseCode
                     if (responseCode == HttpsURLConnection.HTTP_OK) {
