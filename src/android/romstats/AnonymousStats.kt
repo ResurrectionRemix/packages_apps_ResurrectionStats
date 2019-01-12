@@ -161,7 +161,7 @@ class AnonymousStats: AppCompatActivity() {
             mPersistentOptout = preferenceManager.findPreference(Const.ANONYMOUS_OPT_OUT_PERSIST) as CheckBoxPreference
             mViewStats = preferenceManager.findPreference(PREF_VIEW_STATS) as Preference
             mViewStats?.setOnPreferenceClickListener {
-                val uri = Uri.parse(Utilities.statsUrl!! + "stats-o.php")
+                val uri = Uri.parse(Utilities.statsUrl!! + "stats.php")
                 startActivity(Intent(Intent.ACTION_VIEW, uri))
                 true
             }
