@@ -132,28 +132,12 @@ class ReportingService : Service() {
                     val responseCode = client.responseCode
                     if (responseCode == HttpsURLConnection.HTTP_OK) {
                         val reader = BufferedReader(InputStreamReader(client.inputStream))
-                        val response = StringBuilder()
-                        var line: String?
-                        while (true) {
-                            line = reader.readLine()
-                            if (line == null)
-                                break
-                            response.append(line)
-                        }
-                        reader.close()
+                        val response = reader.emitAllAndClose()
                         Log.d(Const.TAG, "server output: $response")
                         success = true
                     } else {
                         val reader = BufferedReader(InputStreamReader(client.errorStream))
-                        val response = StringBuilder()
-                        var line: String?
-                        while (true) {
-                            line = reader.readLine()
-                            if (line == null)
-                                break
-                            response.append(line)
-                        }
-                        reader.close()
+                        val response = reader.emitAllAndClose()
                         Log.d(Const.TAG, "server error: $response")
                     }
                 } catch (e: SocketTimeoutException) {
