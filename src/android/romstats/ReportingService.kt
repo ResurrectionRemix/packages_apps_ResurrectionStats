@@ -115,13 +115,14 @@ class ReportingService : Service() {
 
                 // report to the rrstats service
                 val headers = HashMap<String, String?>()
-                headers["device_hash"] = deviceId
-                headers["device_name"] = deviceName
-                headers["device_version"] = deviceVersion
-                headers["device_country"] = deviceCountry
-                headers["device_carrier"] = deviceCarrier
-                headers["device_carrier_id"] = deviceCarrierId
-                headers["rom_name"] = romName
+                headers["deviceHash"] = deviceId
+                headers["deviceName"] = deviceName
+                headers["deviceVersion"] = deviceVersion
+                headers["deviceCountry"] = deviceCountry
+                headers["deviceCarrier"] = deviceCarrier
+                headers["deviceCarrierId"] = deviceCarrierId
+                headers["romName"] = romName
+                headers["romVersion"] = romVersion
                 var success = false
                 try {
                     val url = URL(romStatsUrl + "submit.php")
