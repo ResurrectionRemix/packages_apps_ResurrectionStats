@@ -10,7 +10,8 @@ object Const {
     const val ANONYMOUS_LAST_REPORT_VERSION = "pref_anonymous_last_rep_version"
     const val ANONYMOUS_NEXT_ALARM = "pref_anonymous_next_alarm"
 
-    const val STATS_URL = "https://stats.resurrectionremix.com/"
+    const val STATS_URL = "https://resurrectionremix-pie.sourceforge.io/"
+    const val VIEW_URL = "https://stats.resurrectionremix.com/"
     const val RR_VERSION = "7.0.0"
     const val ROMNAME = "ResurrectionRemix"
     const val TIMEFRAME = 1
