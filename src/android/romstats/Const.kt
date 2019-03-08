@@ -12,7 +12,7 @@ object Const {
 
     const val STATS_URL = "https://resurrectionremix-pie.sourceforge.io/"
     const val VIEW_URL = "https://stats.resurrectionremix.com/"
-    const val RR_VERSION = "7.0.0"
+    const val RR_VERSION = "7.0.1"
     const val ROMNAME = "ResurrectionRemix"
     const val TIMEFRAME = 1
     val DEBUG = BuildConfig.DEBUG
